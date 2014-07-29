@@ -1,0 +1,70 @@
+{
+  "formatVersion" : 1,
+  "teamIdentifier" : "",
+  "description" : "3 Months Free Rides",
+  "foregroundColor" : "rgb(255, 255, 255)",
+  "suppressStripShine" : true,
+  "backgroundColor" : "rgb(233, 120, 28)",
+  "serialNumber" : "12345",
+  "storeCard" : {
+    "headerFields" : [
+      {
+        "key" : "lessons",
+        "label" : "Valid till",
+        "value" : "Aug 20th"
+      }
+    ],
+    "primaryFields" : [
+      {
+        "key" : "balance",
+        "label" : "3 Month Pass",
+        "value" : "Black Friday"
+      }
+    ],
+    "backFields" : [
+      {
+        "label" : "You can find us at:",
+        "key" : "address",
+        "value" : "1 Rocky Mtn. Road, Happyville"
+      },
+      {
+        "dateStyle" : "PKDateStyleNone",
+        "label" : "Opens at:",
+        "key" : "date",
+        "value" : "2013-08-19T08:00-02:00",
+        "timeStyle" : "PKDateStyleShort"
+      },
+      {
+        "dateStyle" : "PKDateStyleNone",
+        "label" : "Closes at:",
+        "key" : "dateEnd",
+        "value" : "2013-08-19T20:00-02:00",
+        "timeStyle" : "PKDateStyleShort"
+      },
+      {
+        "label" : "Paper receipt",
+        "key" : "receipt",
+        "value" : "Your purchase number is 234-235-5678. If you need a paper receipt for tax purposes you can print it at the following address: www.crazyridesllc.com\/receipts\/print.php?show=clientconfirmation&receiptId=234-235-5678&source=passbook"
+      },
+      {
+        "key" : "credits",
+        "value" : "Photo: http:\/\/www.flickr.com\/photos\/aukirk\/9233111519\/"
+      }
+    ],
+    "secondaryFields" : [
+      {
+        "key" : "name",
+        "label" : "Name",
+        "value" : "John Appleseed"
+      }
+    ]
+  },
+  "barcode" : {
+    "message" : "q2eq3aaa",
+    "format" : "PKBarcodeFormatPDF417",
+    "messageEncoding" : "iso-8859-1"
+  },
+  "logoText" : "Crazy Rides",
+  "organizationName" : "Crazy Rides",
+  "passTypeIdentifier" : ""
+}

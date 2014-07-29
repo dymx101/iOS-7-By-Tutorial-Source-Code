@@ -1,0 +1,289 @@
+//
+//  ViewController.m
+//  ColloQR
+//
+//  Created by Matt Galloway on 20/06/2013.
+//  Copyright (c) 2013 Matt Galloway. All rights reserved.
+//
+
+#import "ViewController.h"
+
+@import AVFoundation;
+
+@interface Barcode : NSObject
+@property (nonatomic, strong) AVMetadataMachineReadableCodeObject *metadataObject;
+@property (nonatomic, strong) UIBezierPath *cornersPath;
+@property (nonatomic, strong) UIBezierPath *boundingBoxPath;
+@end
+
+@implementation Barcode
+@end
+
+@interface ViewController () <AVCaptureMetadataOutputObjectsDelegate>
+@property (nonatomic, weak) IBOutlet UIView *previewView;
+@end
+
+@implementation ViewController {
+    AVCaptureSession *_captureSession;
+    AVCaptureDevice *_videoDevice;
+    AVCaptureDeviceInput *_videoInput;
+    AVCaptureVideoPreviewLayer *_previewLayer;
+    AVCaptureMetadataOutput *_metadataOutput;
+    BOOL _running;
+    
+    AVSpeechSynthesizer *_speechSynthesizer;
+    
+    NSMutableDictionary *_barcodes;
+    CGFloat _initialPinchZoom;
+}
+
+#pragma mark -
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self setupCaptureSession];
+    
+    _previewLayer.frame = _previewView.bounds;
+    [_previewView.layer addSublayer:_previewLayer];
+    
+    _speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
+    
+    _barcodes = [NSMutableDictionary new];
+    
+    [_previewView addGestureRecognizer:[[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinchDetected:)]];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillEnterForeground:) name:UIApplicationWillEnterForegroundNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidEnterBackground:) name:UIApplicationDidEnterBackgroundNotification object:nil];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self startRunning];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self stopRunning];
+}
+
+
+#pragma mark - Notifications
+
+- (void)applicationWillEnterForeground:(NSNotification*)note {
+    [self startRunning];
+}
+
+- (void)applicationDidEnterBackground:(NSNotification*)note {
+    [self stopRunning];
+}
+
+
+#pragma mark - Actions
+
+- (void)pinchDetected:(UIPinchGestureRecognizer*)recogniser {
+    // 1
+    if (!_videoDevice) return;
+    
+    // 2
+    if (recogniser.state == UIGestureRecognizerStateBegan) {
+        _initialPinchZoom = _videoDevice.videoZoomFactor;
+    }
+    
+    // 3
+    NSError *error = nil;
+    [_videoDevice lockForConfiguration:&error];
+    
+    if (!error) {
+        CGFloat zoomFactor;
+        CGFloat scale = recogniser.scale;
+        if (scale < 1.0f) {
+            // 4
+            zoomFactor = _initialPinchZoom - pow(_videoDevice.activeFormat.videoMaxZoomFactor, 1.0f - recogniser.scale);
+        } else {
+            // 5
+            zoomFactor = _initialPinchZoom + pow(_videoDevice.activeFormat.videoMaxZoomFactor, (recogniser.scale - 1.0f) / 2.0f);
+        }
+        
+        // 6
+        zoomFactor = MIN(10.0f, zoomFactor);
+        zoomFactor = MAX(1.0f, zoomFactor);
+        
+        // 7
+        _videoDevice.videoZoomFactor = zoomFactor;
+        
+        // 8
+        [_videoDevice unlockForConfiguration];
+    }
+}
+
+
+#pragma mark - Video stuff
+
+- (void)startRunning {
+    if (_running) return;
+    [_captureSession startRunning];
+    _metadataOutput.metadataObjectTypes = _metadataOutput.availableMetadataObjectTypes;
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback withOptions:0 error:nil];
+    [[AVAudioSession sharedInstance] setActive:YES error:nil];
+    _running = YES;
+}
+
+- (void)stopRunning {
+    if (!_running) return;
+    [_captureSession stopRunning];
+    [[AVAudioSession sharedInstance] setActive:NO error:nil];
+    _running = NO;
+}
+
+- (void)setupCaptureSession {
+    // 1
+    if (_captureSession) return;
+    
+    // 2
+    _videoDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    if (!_videoDevice) {
+        NSLog(@"No video camera on this device!");
+        return;
+    }
+    
+    // 3
+    _captureSession = [[AVCaptureSession alloc] init];
+    
+    // 4
+    _videoInput = [[AVCaptureDeviceInput alloc] initWithDevice:_videoDevice error:nil];
+    
+    // 5
+    if ([_captureSession canAddInput:_videoInput]) {
+        [_captureSession addInput:_videoInput];
+    }
+    
+    // 6
+    _previewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:_captureSession];
+    _previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+    
+    _metadataOutput = [[AVCaptureMetadataOutput alloc] init];
+    
+    dispatch_queue_t metadataQueue = dispatch_queue_create("com.razeware.ColloQR.metadata", 0);
+    [_metadataOutput setMetadataObjectsDelegate:self queue:metadataQueue];
+    
+    if ([_captureSession canAddOutput:_metadataOutput]) {
+        [_captureSession addOutput:_metadataOutput];
+    }
+}
+
+
+#pragma mark -
+
+- (Barcode*)processMetadataObject:(AVMetadataMachineReadableCodeObject*)code {
+    // 1
+    Barcode *barcode = _barcodes[code.stringValue];
+    
+    // 2
+    if (!barcode) {
+        barcode = [Barcode new];
+        _barcodes[code.stringValue] = barcode;
+    }
+    
+    // 3
+    barcode.metadataObject = code;
+    
+    // Create the path joining code's corners
+    
+    // 4
+    CGMutablePathRef cornersPath = CGPathCreateMutable();
+    
+    // 5
+    CGPoint point;
+    CGPointMakeWithDictionaryRepresentation((CFDictionaryRef)code.corners[0], &point);
+    
+    // 6
+    CGPathMoveToPoint(cornersPath, nil, point.x, point.y);
+    
+    // 7
+    for (int i = 1; i < code.corners.count; i++) {
+        CGPointMakeWithDictionaryRepresentation((CFDictionaryRef)code.corners[i], &point);
+        CGPathAddLineToPoint(cornersPath, nil, point.x, point.y);
+    }
+    
+    // 8
+    CGPathCloseSubpath(cornersPath);
+    
+    // 9
+    barcode.cornersPath = [UIBezierPath bezierPathWithCGPath:cornersPath];
+    CGPathRelease(cornersPath);
+    
+    // Create the path for the code's bounding box
+    
+    // 10
+    barcode.boundingBoxPath = [UIBezierPath bezierPathWithRect:code.bounds];
+    
+    // 11
+    return barcode;
+}
+
+
+#pragma mark - AVCaptureMetadataOutputObjectsDelegate
+
+- (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection {
+    NSSet *originalBarcodes = [NSSet setWithArray:_barcodes.allValues];
+    NSMutableSet *foundBarcodes = [NSMutableSet new];
+    
+    [metadataObjects enumerateObjectsUsingBlock:^(AVMetadataObject *obj, NSUInteger idx, BOOL *stop) {
+        NSLog(@"Metadata: %@", obj);
+        if ([obj isKindOfClass:[AVMetadataMachineReadableCodeObject class]]) {
+            AVMetadataMachineReadableCodeObject *code = (AVMetadataMachineReadableCodeObject*)[_previewLayer transformedMetadataObjectForMetadataObject:obj];
+            Barcode *barcode = [self processMetadataObject:code];
+            [foundBarcodes addObject:barcode];
+        }
+    }];
+    
+    NSMutableSet *newBarcodes = [foundBarcodes mutableCopy];
+    [newBarcodes minusSet:originalBarcodes];
+    
+    NSMutableSet *goneBarcodes = [originalBarcodes mutableCopy];
+    [goneBarcodes minusSet:foundBarcodes];
+    
+    [goneBarcodes enumerateObjectsUsingBlock:^(Barcode *barcode, BOOL *stop) {
+        [_barcodes removeObjectForKey:barcode.metadataObject.stringValue];
+    }];
+    
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        // Remove all old layers
+        NSArray *allSublayers = [_previewView.layer.sublayers copy];
+        [allSublayers enumerateObjectsUsingBlock:^(CALayer *layer, NSUInteger idx, BOOL *stop) {
+            if (layer != _previewLayer) {
+                [layer removeFromSuperlayer];
+            }
+        }];
+        
+        // Add new layers
+        [foundBarcodes enumerateObjectsUsingBlock:^(Barcode *barcode, BOOL *stop) {
+            CAShapeLayer *boundingBoxLayer = [CAShapeLayer new];
+            boundingBoxLayer.path = barcode.boundingBoxPath.CGPath;
+            boundingBoxLayer.lineWidth = 2.0f;
+            boundingBoxLayer.strokeColor = [UIColor greenColor].CGColor;
+            boundingBoxLayer.fillColor = [UIColor colorWithRed:0.0f green:1.0f blue:0.0f alpha:0.5f].CGColor;
+            [_previewView.layer addSublayer:boundingBoxLayer];
+            
+            CAShapeLayer *cornersPathLayer = [CAShapeLayer new];
+            cornersPathLayer.path = barcode.cornersPath.CGPath;
+            cornersPathLayer.lineWidth = 2.0f;
+            cornersPathLayer.strokeColor = [UIColor blueColor].CGColor;
+            cornersPathLayer.fillColor = [UIColor colorWithRed:0.0f green:0.0f blue:1.0f alpha:0.5f].CGColor;
+            [_previewView.layer addSublayer:cornersPathLayer];
+        }];
+        
+        // Speak the new barcodes
+        [newBarcodes enumerateObjectsUsingBlock:^(Barcode *barcode, BOOL *stop) {
+            AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:barcode.metadataObject.stringValue];
+            utterance.rate = AVSpeechUtteranceMinimumSpeechRate + ((AVSpeechUtteranceMaximumSpeechRate - AVSpeechUtteranceMinimumSpeechRate) * 0.5f);
+            utterance.volume = 1.0f;
+            utterance.pitchMultiplier = 1.2f;
+            
+            [_speechSynthesizer speakUtterance:utterance];
+        }];
+    });
+}
+
+@end

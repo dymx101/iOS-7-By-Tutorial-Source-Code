@@ -1,0 +1,3 @@
+Since this sample project includes a number of large video files, we have included the resources for this project as a separate download rather than included by default with the book. You can download the resources for this chapter here:
+
+http://cdn1.raywenderlich.com/downloads/NASATV.zip

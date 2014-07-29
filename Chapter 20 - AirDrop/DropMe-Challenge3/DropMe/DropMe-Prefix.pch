@@ -1,0 +1,55 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+/*
+ * This is a notification that application delegate sends out whenever
+ * a new file is added to user documents directry by invoking the application
+ * by OS and passing in URL of a document.
+ */
+    #define DocumentsDirectoryContentDidChangeNotification @"DocumentsDirectoryContentDidChangeNotification"
+
+/*
+ * This is the custom file type(s) that this application recognizes. To make it more
+ * convenient and accessible through out the application, it is defined here.
+ */
+    #define kUTTypeDropMe   @"com.razeware.dropme.dm"
+
+/*
+ * This function returns the user documents directory URL.
+ * For convenient and accessibility through out the application, we place it here.
+ */
+static inline NSURL* UserDocumentsDirectory ()
+{
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+/*
+ * This function returns a string from a given date that.
+ * is formatted with a pre-defined format.
+ */
+static inline NSString* FormattedStringWithDate(NSDate *date)
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"YYYYMMDDHHmmss"];
+    return [formatter stringFromDate:[NSDate date]];
+}
+
+/*
+ * A convenient macro to return UIColor from RGB values.
+ */
+    #define RGBColor(r, g, b) [UIColor colorWithRed:(r/255.0) green:(g/255.0) blue:(b/255.0) alpha:1.0]
+
+#endif

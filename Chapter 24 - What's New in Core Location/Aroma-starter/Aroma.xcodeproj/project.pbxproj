@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83BFBFE317B0BAFE00741CCC /* MultipeerConnectivityService.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BFBFE217B0BAFE00741CCC /* MultipeerConnectivityService.m */; };
+		83BFBFED17B0DF1D00741CCC /* ReserveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BFBFEC17B0DF1D00741CCC /* ReserveTableViewController.m */; };
+		83CD7B7F17ADD49000C5E680 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CD7B7E17ADD49000C5E680 /* Foundation.framework */; };
+		83CD7B8117ADD49000C5E680 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CD7B8017ADD49000C5E680 /* CoreGraphics.framework */; };
+		83CD7B8317ADD49000C5E680 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CD7B8217ADD49000C5E680 /* UIKit.framework */; };
+		83CD7B8917ADD49000C5E680 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83CD7B8717ADD49000C5E680 /* InfoPlist.strings */; };
+		83CD7B8B17ADD49000C5E680 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CD7B8A17ADD49000C5E680 /* main.m */; };
+		83CD7B8F17ADD49000C5E680 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CD7B8E17ADD49000C5E680 /* AppDelegate.m */; };
+		83CD7B9217ADD49000C5E680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CD7B9017ADD49000C5E680 /* Main.storyboard */; };
+		83CD7B9517ADD49000C5E680 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CD7B9417ADD49000C5E680 /* MainViewController.m */; };
+		83CD7B9717ADD49000C5E680 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CD7B9617ADD49000C5E680 /* Images.xcassets */; };
+		83CD7B9E17ADD49000C5E680 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CD7B9D17ADD49000C5E680 /* XCTest.framework */; };
+		83CD7B9F17ADD49000C5E680 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CD7B7E17ADD49000C5E680 /* Foundation.framework */; };
+		83CD7BA017ADD49000C5E680 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CD7B8217ADD49000C5E680 /* UIKit.framework */; };
+		83CD7BA817ADD49000C5E680 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83CD7BA617ADD49000C5E680 /* InfoPlist.strings */; };
+		83CD7BAA17ADD49000C5E680 /* AromaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CD7BA917ADD49000C5E680 /* AromaTests.m */; };
+		83CD7BB817ADE07600C5E680 /* RestaurantDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CD7BB717ADE07600C5E680 /* RestaurantDetailViewController.m */; };
+		83CD7BBB17ADE57E00C5E680 /* RestaurantDetailService.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CD7BBA17ADE57E00C5E680 /* RestaurantDetailService.m */; };
+		83CD7BBE17ADE5D200C5E680 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CD7BBD17ADE5D200C5E680 /* Restaurant.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83CD7BA117ADD49000C5E680 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CD7B7317ADD49000C5E680 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83CD7B7A17ADD49000C5E680;
+			remoteInfo = Aroma;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		83BFBFE117B0BAFE00741CCC /* MultipeerConnectivityService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipeerConnectivityService.h; sourceTree = "<group>"; };
+		83BFBFE217B0BAFE00741CCC /* MultipeerConnectivityService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipeerConnectivityService.m; sourceTree = "<group>"; };
+		83BFBFEB17B0DF1D00741CCC /* ReserveTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReserveTableViewController.h; sourceTree = "<group>"; };
+		83BFBFEC17B0DF1D00741CCC /* ReserveTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReserveTableViewController.m; sourceTree = "<group>"; };
+		83CD7B7B17ADD49000C5E680 /* Aroma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aroma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CD7B7E17ADD49000C5E680 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		83CD7B8017ADD49000C5E680 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		83CD7B8217ADD49000C5E680 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		83CD7B8617ADD49000C5E680 /* Aroma-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Aroma-Info.plist"; sourceTree = "<group>"; };
+		83CD7B8817ADD49000C5E680 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		83CD7B8A17ADD49000C5E680 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83CD7B8C17ADD49000C5E680 /* Aroma-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Aroma-Prefix.pch"; sourceTree = "<group>"; };
+		83CD7B8D17ADD49000C5E680 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		83CD7B8E17ADD49000C5E680 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		83CD7B9117ADD49000C5E680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83CD7B9317ADD49000C5E680 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		83CD7B9417ADD49000C5E680 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		83CD7B9617ADD49000C5E680 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		83CD7B9C17ADD49000C5E680 /* AromaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AromaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CD7B9D17ADD49000C5E680 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		83CD7BA517ADD49000C5E680 /* AromaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AromaTests-Info.plist"; sourceTree = "<group>"; };
+		83CD7BA717ADD49000C5E680 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		83CD7BA917ADD49000C5E680 /* AromaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AromaTests.m; sourceTree = "<group>"; };
+		83CD7BB617ADE07600C5E680 /* RestaurantDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantDetailViewController.h; sourceTree = "<group>"; };
+		83CD7BB717ADE07600C5E680 /* RestaurantDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantDetailViewController.m; sourceTree = "<group>"; };
+		83CD7BB917ADE57E00C5E680 /* RestaurantDetailService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantDetailService.h; sourceTree = "<group>"; };
+		83CD7BBA17ADE57E00C5E680 /* RestaurantDetailService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantDetailService.m; sourceTree = "<group>"; };
+		83CD7BBC17ADE5D200C5E680 /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		83CD7BBD17ADE5D200C5E680 /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83CD7B7817ADD49000C5E680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CD7B8117ADD49000C5E680 /* CoreGraphics.framework in Frameworks */,
+				83CD7B8317ADD49000C5E680 /* UIKit.framework in Frameworks */,
+				83CD7B7F17ADD49000C5E680 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CD7B9917ADD49000C5E680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CD7B9E17ADD49000C5E680 /* XCTest.framework in Frameworks */,
+				83CD7BA017ADD49000C5E680 /* UIKit.framework in Frameworks */,
+				83CD7B9F17ADD49000C5E680 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83BFBFDC17AF84BB00741CCC /* iBeacon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iBeacon;
+			sourceTree = "<group>";
+		};
+		83BFBFE017B0BAAB00741CCC /* Multipeer */ = {
+			isa = PBXGroup;
+			children = (
+				83BFBFE117B0BAFE00741CCC /* MultipeerConnectivityService.h */,
+				83BFBFE217B0BAFE00741CCC /* MultipeerConnectivityService.m */,
+			);
+			path = Multipeer;
+			sourceTree = "<group>";
+		};
+		83CD7B7217ADD49000C5E680 = {
+			isa = PBXGroup;
+			children = (
+				83CD7B8417ADD49000C5E680 /* Aroma */,
+				83CD7BA317ADD49000C5E680 /* AromaTests */,
+				83CD7B7D17ADD49000C5E680 /* Frameworks */,
+				83CD7B7C17ADD49000C5E680 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83CD7B7C17ADD49000C5E680 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83CD7B7B17ADD49000C5E680 /* Aroma.app */,
+				83CD7B9C17ADD49000C5E680 /* AromaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83CD7B7D17ADD49000C5E680 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83CD7B7E17ADD49000C5E680 /* Foundation.framework */,
+				83CD7B8017ADD49000C5E680 /* CoreGraphics.framework */,
+				83CD7B8217ADD49000C5E680 /* UIKit.framework */,
+				83CD7B9D17ADD49000C5E680 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83CD7B8417ADD49000C5E680 /* Aroma */ = {
+			isa = PBXGroup;
+			children = (
+				83BFBFDC17AF84BB00741CCC /* iBeacon */,
+				83BFBFE017B0BAAB00741CCC /* Multipeer */,
+				83CD7B8D17ADD49000C5E680 /* AppDelegate.h */,
+				83CD7B8E17ADD49000C5E680 /* AppDelegate.m */,
+				83CD7B9017ADD49000C5E680 /* Main.storyboard */,
+				83CD7B9317ADD49000C5E680 /* MainViewController.h */,
+				83CD7B9417ADD49000C5E680 /* MainViewController.m */,
+				83CD7B9617ADD49000C5E680 /* Images.xcassets */,
+				83CD7B8517ADD49000C5E680 /* Supporting Files */,
+				83CD7BB617ADE07600C5E680 /* RestaurantDetailViewController.h */,
+				83CD7BB717ADE07600C5E680 /* RestaurantDetailViewController.m */,
+				83CD7BB917ADE57E00C5E680 /* RestaurantDetailService.h */,
+				83CD7BBA17ADE57E00C5E680 /* RestaurantDetailService.m */,
+				83CD7BBC17ADE5D200C5E680 /* Restaurant.h */,
+				83CD7BBD17ADE5D200C5E680 /* Restaurant.m */,
+				83BFBFEB17B0DF1D00741CCC /* ReserveTableViewController.h */,
+				83BFBFEC17B0DF1D00741CCC /* ReserveTableViewController.m */,
+			);
+			path = Aroma;
+			sourceTree = "<group>";
+		};
+		83CD7B8517ADD49000C5E680 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83CD7B8617ADD49000C5E680 /* Aroma-Info.plist */,
+				83CD7B8717ADD49000C5E680 /* InfoPlist.strings */,
+				83CD7B8A17ADD49000C5E680 /* main.m */,
+				83CD7B8C17ADD49000C5E680 /* Aroma-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83CD7BA317ADD49000C5E680 /* AromaTests */ = {
+			isa = PBXGroup;
+			children = (
+				83CD7BA917ADD49000C5E680 /* AromaTests.m */,
+				83CD7BA417ADD49000C5E680 /* Supporting Files */,
+			);
+			path = AromaTests;
+			sourceTree = "<group>";
+		};
+		83CD7BA417ADD49000C5E680 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83CD7BA517ADD49000C5E680 /* AromaTests-Info.plist */,
+				83CD7BA617ADD49000C5E680 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83CD7B7A17ADD49000C5E680 /* Aroma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83CD7BAD17ADD49000C5E680 /* Build configuration list for PBXNativeTarget "Aroma" */;
+			buildPhases = (
+				83CD7B7717ADD49000C5E680 /* Sources */,
+				83CD7B7817ADD49000C5E680 /* Frameworks */,
+				83CD7B7917ADD49000C5E680 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aroma;
+			productName = Aroma;
+			productReference = 83CD7B7B17ADD49000C5E680 /* Aroma.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83CD7B9B17ADD49000C5E680 /* AromaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83CD7BB017ADD49000C5E680 /* Build configuration list for PBXNativeTarget "AromaTests" */;
+			buildPhases = (
+				83CD7B9817ADD49000C5E680 /* Sources */,
+				83CD7B9917ADD49000C5E680 /* Frameworks */,
+				83CD7B9A17ADD49000C5E680 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83CD7BA217ADD49000C5E680 /* PBXTargetDependency */,
+			);
+			name = AromaTests;
+			productName = AromaTests;
+			productReference = 83CD7B9C17ADD49000C5E680 /* AromaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CD7B7317ADD49000C5E680 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Razeware;
+				TargetAttributes = {
+					83CD7B7A17ADD49000C5E680 = {
+						DevelopmentTeam = X28LAA5D4H;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					83CD7B9B17ADD49000C5E680 = {
+						TestTargetID = 83CD7B7A17ADD49000C5E680;
+					};
+				};
+			};
+			buildConfigurationList = 83CD7B7617ADD49000C5E680 /* Build configuration list for PBXProject "Aroma" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CD7B7217ADD49000C5E680;
+			productRefGroup = 83CD7B7C17ADD49000C5E680 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83CD7B7A17ADD49000C5E680 /* Aroma */,
+				83CD7B9B17ADD49000C5E680 /* AromaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83CD7B7917ADD49000C5E680 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CD7B9717ADD49000C5E680 /* Images.xcassets in Resources */,
+				83CD7B8917ADD49000C5E680 /* InfoPlist.strings in Resources */,
+				83CD7B9217ADD49000C5E680 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CD7B9A17ADD49000C5E680 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CD7BA817ADD49000C5E680 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83CD7B7717ADD49000C5E680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CD7BBB17ADE57E00C5E680 /* RestaurantDetailService.m in Sources */,
+				83CD7BB817ADE07600C5E680 /* RestaurantDetailViewController.m in Sources */,
+				83BFBFED17B0DF1D00741CCC /* ReserveTableViewController.m in Sources */,
+				83CD7B9517ADD49000C5E680 /* MainViewController.m in Sources */,
+				83CD7B8F17ADD49000C5E680 /* AppDelegate.m in Sources */,
+				83BFBFE317B0BAFE00741CCC /* MultipeerConnectivityService.m in Sources */,
+				83CD7BBE17ADE5D200C5E680 /* Restaurant.m in Sources */,
+				83CD7B8B17ADD49000C5E680 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CD7B9817ADD49000C5E680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CD7BAA17ADD49000C5E680 /* AromaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83CD7BA217ADD49000C5E680 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83CD7B7A17ADD49000C5E680 /* Aroma */;
+			targetProxy = 83CD7BA117ADD49000C5E680 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83CD7B8717ADD49000C5E680 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83CD7B8817ADD49000C5E680 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		83CD7B9017ADD49000C5E680 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83CD7B9117ADD49000C5E680 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83CD7BA617ADD49000C5E680 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83CD7BA717ADD49000C5E680 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83CD7BAB17ADD49000C5E680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CD7BAC17ADD49000C5E680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83CD7BAE17ADD49000C5E680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Aroma/Aroma-Prefix.pch";
+				INFOPLIST_FILE = "Aroma/Aroma-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		83CD7BAF17ADD49000C5E680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Aroma/Aroma-Prefix.pch";
+				INFOPLIST_FILE = "Aroma/Aroma-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		83CD7BB117ADD49000C5E680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Aroma.app/Aroma";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Aroma/Aroma-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AromaTests/AromaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		83CD7BB217ADD49000C5E680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Aroma.app/Aroma";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Aroma/Aroma-Prefix.pch";
+				INFOPLIST_FILE = "AromaTests/AromaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83CD7B7617ADD49000C5E680 /* Build configuration list for PBXProject "Aroma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CD7BAB17ADD49000C5E680 /* Debug */,
+				83CD7BAC17ADD49000C5E680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CD7BAD17ADD49000C5E680 /* Build configuration list for PBXNativeTarget "Aroma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CD7BAE17ADD49000C5E680 /* Debug */,
+				83CD7BAF17ADD49000C5E680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CD7BB017ADD49000C5E680 /* Build configuration list for PBXNativeTarget "AromaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CD7BB117ADD49000C5E680 /* Debug */,
+				83CD7BB217ADD49000C5E680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CD7B7317ADD49000C5E680 /* Project object */;
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>How to use UIScrollView to scroll and zoom content</string>
+		<key>url</key>
+		<string>http://cdn1.raywenderlich.com/downloads/ScrollViews.zip</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>How to add search into a table view</string>
+		<key>url</key>
+		<string>http://cdn4.raywenderlich.com/downloads/CandySearch.zip</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>PaintCode tutorial: Dynamic Buttons</string>
+		<key>url</key>
+		<string>http://cdn3.raywenderlich.com/wp-content/uploads/2013/11/PaintCode-Part-1-Final.zip</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>PaintCode tutorial: Custom Progress Bar</string>
+		<key>url</key>
+		<string>http://cdn1.raywenderlich.com/wp-content/uploads/2014/03/PaintCode-Part-2-Final.zip</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>PaintCode tutorial: Bezier Paths</string>
+		<key>url</key>
+		<string>http://cdn1.raywenderlich.com/wp-content/uploads/2014/05/PaintCode-Part-3-Final.zip</string>
+	</dict>
+</array>
+</plist>

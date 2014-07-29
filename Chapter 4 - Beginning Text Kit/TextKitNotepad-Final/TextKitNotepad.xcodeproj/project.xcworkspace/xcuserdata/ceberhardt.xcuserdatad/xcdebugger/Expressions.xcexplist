@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[TKDInteractiveTextColoringTextStorage applyTokenAttributesToRange:]:TKDInteractiveTextColoringTextStorage.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self string].length">
+            </PersistentString>
+            <PersistentString
+               value = "[self string]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__69-[TKDInteractiveTextColoringTextStorage applyTokenAttributesToRange:]_block_invoke76:TKDInteractiveTextColoringTextStorage.m">
+      </ContextState>
+      <ContextState
+         contextName = "__69-[TKDInteractiveTextColoringTextStorage applyTokenAttributesToRange:]_block_invoke:TKDInteractiveTextColoringTextStorage.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "match.range">
+            </PersistentString>
+            <PersistentString
+               value = "key">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

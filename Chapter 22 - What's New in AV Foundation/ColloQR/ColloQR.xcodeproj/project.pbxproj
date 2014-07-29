@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9155D021775B2CA00451D1B /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9155D011775B2CA00451D1B /* Defaults.plist */; };
+		C960845A17739698000836F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960845917739698000836F1 /* Foundation.framework */; };
+		C960845C17739698000836F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960845B17739698000836F1 /* CoreGraphics.framework */; };
+		C960845E17739698000836F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960845D17739698000836F1 /* UIKit.framework */; };
+		C960846417739698000836F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C960846217739698000836F1 /* InfoPlist.strings */; };
+		C960846617739698000836F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C960846517739698000836F1 /* main.m */; };
+		C960846A17739698000836F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C960846917739698000836F1 /* AppDelegate.m */; };
+		C960846D17739698000836F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C960846B17739698000836F1 /* Main.storyboard */; };
+		C960847017739698000836F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C960846F17739698000836F1 /* ViewController.m */; };
+		C960847217739698000836F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C960847117739698000836F1 /* Images.xcassets */; };
+		C960847917739698000836F1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960847817739698000836F1 /* XCTest.framework */; };
+		C960847A17739698000836F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960845917739698000836F1 /* Foundation.framework */; };
+		C960847B17739698000836F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960845D17739698000836F1 /* UIKit.framework */; };
+		C960848317739698000836F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C960848117739698000836F1 /* InfoPlist.strings */; };
+		C960848517739698000836F1 /* ColloQRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C960848417739698000836F1 /* ColloQRTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C960847C17739698000836F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C960844E17739698000836F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C960845517739698000836F1;
+			remoteInfo = ColloQR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9155D011775B2CA00451D1B /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
+		C960845617739698000836F1 /* ColloQR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColloQR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C960845917739698000836F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C960845B17739698000836F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C960845D17739698000836F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C960846117739698000836F1 /* ColloQR-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColloQR-Info.plist"; sourceTree = "<group>"; };
+		C960846317739698000836F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C960846517739698000836F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C960846717739698000836F1 /* ColloQR-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColloQR-Prefix.pch"; sourceTree = "<group>"; };
+		C960846817739698000836F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C960846917739698000836F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C960846C17739698000836F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C960846E17739698000836F1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C960846F17739698000836F1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C960847117739698000836F1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C960847717739698000836F1 /* ColloQRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColloQRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C960847817739698000836F1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C960848017739698000836F1 /* ColloQRTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColloQRTests-Info.plist"; sourceTree = "<group>"; };
+		C960848217739698000836F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C960848417739698000836F1 /* ColloQRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColloQRTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C960845317739698000836F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C960845C17739698000836F1 /* CoreGraphics.framework in Frameworks */,
+				C960845E17739698000836F1 /* UIKit.framework in Frameworks */,
+				C960845A17739698000836F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C960847417739698000836F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C960847917739698000836F1 /* XCTest.framework in Frameworks */,
+				C960847B17739698000836F1 /* UIKit.framework in Frameworks */,
+				C960847A17739698000836F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C960844D17739698000836F1 = {
+			isa = PBXGroup;
+			children = (
+				C960845F17739698000836F1 /* ColloQR */,
+				C960847E17739698000836F1 /* ColloQRTests */,
+				C960845817739698000836F1 /* Frameworks */,
+				C960845717739698000836F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C960845717739698000836F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C960845617739698000836F1 /* ColloQR.app */,
+				C960847717739698000836F1 /* ColloQRTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C960845817739698000836F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C960845917739698000836F1 /* Foundation.framework */,
+				C960845B17739698000836F1 /* CoreGraphics.framework */,
+				C960845D17739698000836F1 /* UIKit.framework */,
+				C960847817739698000836F1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C960845F17739698000836F1 /* ColloQR */ = {
+			isa = PBXGroup;
+			children = (
+				C960846817739698000836F1 /* AppDelegate.h */,
+				C960846917739698000836F1 /* AppDelegate.m */,
+				C960846B17739698000836F1 /* Main.storyboard */,
+				C960846E17739698000836F1 /* ViewController.h */,
+				C960846F17739698000836F1 /* ViewController.m */,
+				C960847117739698000836F1 /* Images.xcassets */,
+				C960846017739698000836F1 /* Supporting Files */,
+			);
+			path = ColloQR;
+			sourceTree = "<group>";
+		};
+		C960846017739698000836F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C960846117739698000836F1 /* ColloQR-Info.plist */,
+				C960846217739698000836F1 /* InfoPlist.strings */,
+				C960846517739698000836F1 /* main.m */,
+				C960846717739698000836F1 /* ColloQR-Prefix.pch */,
+				C9155D011775B2CA00451D1B /* Defaults.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C960847E17739698000836F1 /* ColloQRTests */ = {
+			isa = PBXGroup;
+			children = (
+				C960848417739698000836F1 /* ColloQRTests.m */,
+				C960847F17739698000836F1 /* Supporting Files */,
+			);
+			path = ColloQRTests;
+			sourceTree = "<group>";
+		};
+		C960847F17739698000836F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C960848017739698000836F1 /* ColloQRTests-Info.plist */,
+				C960848117739698000836F1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C960845517739698000836F1 /* ColloQR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C960848817739698000836F1 /* Build configuration list for PBXNativeTarget "ColloQR" */;
+			buildPhases = (
+				C960845217739698000836F1 /* Sources */,
+				C960845317739698000836F1 /* Frameworks */,
+				C960845417739698000836F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColloQR;
+			productName = ColloQR;
+			productReference = C960845617739698000836F1 /* ColloQR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C960847617739698000836F1 /* ColloQRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C960848B17739698000836F1 /* Build configuration list for PBXNativeTarget "ColloQRTests" */;
+			buildPhases = (
+				C960847317739698000836F1 /* Sources */,
+				C960847417739698000836F1 /* Frameworks */,
+				C960847517739698000836F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C960847D17739698000836F1 /* PBXTargetDependency */,
+			);
+			name = ColloQRTests;
+			productName = ColloQRTests;
+			productReference = C960847717739698000836F1 /* ColloQRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C960844E17739698000836F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Matt Galloway";
+				TargetAttributes = {
+					C960847617739698000836F1 = {
+						TestTargetID = C960845517739698000836F1;
+					};
+				};
+			};
+			buildConfigurationList = C960845117739698000836F1 /* Build configuration list for PBXProject "ColloQR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C960844D17739698000836F1;
+			productRefGroup = C960845717739698000836F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C960845517739698000836F1 /* ColloQR */,
+				C960847617739698000836F1 /* ColloQRTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C960845417739698000836F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9155D021775B2CA00451D1B /* Defaults.plist in Resources */,
+				C960847217739698000836F1 /* Images.xcassets in Resources */,
+				C960846417739698000836F1 /* InfoPlist.strings in Resources */,
+				C960846D17739698000836F1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C960847517739698000836F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C960848317739698000836F1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C960845217739698000836F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C960847017739698000836F1 /* ViewController.m in Sources */,
+				C960846A17739698000836F1 /* AppDelegate.m in Sources */,
+				C960846617739698000836F1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C960847317739698000836F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C960848517739698000836F1 /* ColloQRTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C960847D17739698000836F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C960845517739698000836F1 /* ColloQR */;
+			targetProxy = C960847C17739698000836F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C960846217739698000836F1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C960846317739698000836F1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C960846B17739698000836F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C960846C17739698000836F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C960848117739698000836F1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C960848217739698000836F1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C960848617739698000836F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C960848717739698000836F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C960848917739698000836F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColloQR/ColloQR-Prefix.pch";
+				INFOPLIST_FILE = "ColloQR/ColloQR-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C960848A17739698000836F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColloQR/ColloQR-Prefix.pch";
+				INFOPLIST_FILE = "ColloQR/ColloQR-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C960848C17739698000836F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ColloQR.app/ColloQR";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColloQR/ColloQR-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ColloQRTests/ColloQRTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C960848D17739698000836F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ColloQR.app/ColloQR";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColloQR/ColloQR-Prefix.pch";
+				INFOPLIST_FILE = "ColloQRTests/ColloQRTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C960845117739698000836F1 /* Build configuration list for PBXProject "ColloQR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C960848617739698000836F1 /* Debug */,
+				C960848717739698000836F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C960848817739698000836F1 /* Build configuration list for PBXNativeTarget "ColloQR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C960848917739698000836F1 /* Debug */,
+				C960848A17739698000836F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C960848B17739698000836F1 /* Build configuration list for PBXNativeTarget "ColloQRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C960848C17739698000836F1 /* Debug */,
+				C960848D17739698000836F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C960844E17739698000836F1 /* Project object */;
+}

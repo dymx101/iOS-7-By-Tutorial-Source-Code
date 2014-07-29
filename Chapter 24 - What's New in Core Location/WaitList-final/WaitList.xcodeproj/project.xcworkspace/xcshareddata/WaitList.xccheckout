@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>65FB7A1D-B7E0-4C61-A084-A70C408C1984</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WaitList</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>94958C6B-5F07-4607-931D-17CB8C422EF5</key>
+		<string>https://github.com/cwagdev/WaitList.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WaitList.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>94958C6B-5F07-4607-931D-17CB8C422EF5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cwagdev/WaitList.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>94958C6B-5F07-4607-931D-17CB8C422EF5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>94958C6B-5F07-4607-931D-17CB8C422EF5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WaitList</string>
+		</dict>
+	</array>
+</dict>
+</plist>

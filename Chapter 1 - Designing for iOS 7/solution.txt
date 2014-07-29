@@ -1,0 +1,3 @@
+The resources for this chapter include the solution I came up with, but note that design is by its very nature wholly subjective; there’s no single solution to this challenge. When you’re done, be sure to visit the book’s forums to share and compare your solutions with others:
+
+http://www.raywenderlich.com/forums

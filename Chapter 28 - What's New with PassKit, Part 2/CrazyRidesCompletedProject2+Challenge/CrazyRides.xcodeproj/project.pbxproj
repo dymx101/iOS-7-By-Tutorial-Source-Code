@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C10766F1779A2D0001F712B /* bf3monthspass.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 9C10766E1779A2D0001F712B /* bf3monthspass.pkpass */; };
+		9C410768178F32AD0008B9DD /* btnBlackFriday.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C41075A178F32AD0008B9DD /* btnBlackFriday.png */; };
+		9C410769178F32AD0008B9DD /* btnBlackFriday@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C41075B178F32AD0008B9DD /* btnBlackFriday@2x.png */; };
+		9C41076A178F32AD0008B9DD /* btnBundle.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C41075C178F32AD0008B9DD /* btnBundle.png */; };
+		9C41076B178F32AD0008B9DD /* btnBundle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C41075D178F32AD0008B9DD /* btnBundle@2x.png */; };
+		9C41076C178F32AD0008B9DD /* btnCottonCandy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C41075E178F32AD0008B9DD /* btnCottonCandy.png */; };
+		9C41076D178F32AD0008B9DD /* btnCottonCandy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C41075F178F32AD0008B9DD /* btnCottonCandy@2x.png */; };
+		9C41076E178F32AD0008B9DD /* btnReserveSeats.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C410760178F32AD0008B9DD /* btnReserveSeats.png */; };
+		9C41076F178F32AD0008B9DD /* btnReserveSeats@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C410761178F32AD0008B9DD /* btnReserveSeats@2x.png */; };
+		9C410770178F32AD0008B9DD /* btnSeatBF.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C410762178F32AD0008B9DD /* btnSeatBF.png */; };
+		9C410771178F32AD0008B9DD /* btnSeatBF@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C410763178F32AD0008B9DD /* btnSeatBF@2x.png */; };
+		9C410772178F32AD0008B9DD /* btnSeatWR.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C410764178F32AD0008B9DD /* btnSeatWR.png */; };
+		9C410773178F32AD0008B9DD /* btnSeatWR@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C410765178F32AD0008B9DD /* btnSeatWR@2x.png */; };
+		9C410774178F32AD0008B9DD /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C410766178F32AD0008B9DD /* title.png */; };
+		9C410775178F32AD0008B9DD /* title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C410767178F32AD0008B9DD /* title@2x.png */; };
+		9C58528317819704002DC2F8 /* bf3monthspass.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C10768D1779AC1E001F712B /* bf3monthspass.plist */; };
+		9C8229941779D13500484A3A /* ww3monthspass.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 9C8229921779D13500484A3A /* ww3monthspass.pkpass */; };
+		9C8229981779D1AF00484A3A /* cottoncandy2for1.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 9C8229961779D1AF00484A3A /* cottoncandy2for1.pkpass */; };
+		9C8736A61790B4B7003B2291 /* Credits.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9C8736A51790B4B7003B2291 /* Credits.txt */; };
+		9CFF95AB1775CEFE00B07474 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFF95AA1775CEFE00B07474 /* Foundation.framework */; };
+		9CFF95AD1775CEFE00B07474 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFF95AC1775CEFE00B07474 /* CoreGraphics.framework */; };
+		9CFF95AF1775CEFE00B07474 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFF95AE1775CEFE00B07474 /* UIKit.framework */; };
+		9CFF95B51775CEFE00B07474 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CFF95B31775CEFE00B07474 /* InfoPlist.strings */; };
+		9CFF95B71775CEFE00B07474 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF95B61775CEFE00B07474 /* main.m */; };
+		9CFF95BB1775CEFE00B07474 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF95BA1775CEFE00B07474 /* AppDelegate.m */; };
+		9CFF95BE1775CEFE00B07474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFF95BC1775CEFE00B07474 /* Main.storyboard */; };
+		9CFF95C11775CEFE00B07474 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF95C01775CEFE00B07474 /* MasterViewController.m */; };
+		9CFF95C61775CEFE00B07474 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFF95C51775CEFE00B07474 /* Images.xcassets */; };
+		9CFF95CD1775CEFE00B07474 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFF95CC1775CEFE00B07474 /* XCTest.framework */; };
+		9CFF95CE1775CEFE00B07474 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFF95AA1775CEFE00B07474 /* Foundation.framework */; };
+		9CFF95CF1775CEFE00B07474 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFF95AE1775CEFE00B07474 /* UIKit.framework */; };
+		9CFF95D71775CEFE00B07474 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CFF95D51775CEFE00B07474 /* InfoPlist.strings */; };
+		9CFF95D91775CEFE00B07474 /* CrazyRidesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF95D81775CEFE00B07474 /* CrazyRidesTests.m */; };
+		9CFF95E41775D25800B07474 /* BookSeatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF95E31775D25800B07474 /* BookSeatViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CFF95D01775CEFE00B07474 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CFF959F1775CEFE00B07474 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFF95A61775CEFE00B07474;
+			remoteInfo = CrazyRides;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C10766E1779A2D0001F712B /* bf3monthspass.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; name = bf3monthspass.pkpass; path = passes/bf3monthspass.pkpass; sourceTree = "<group>"; };
+		9C10768D1779AC1E001F712B /* bf3monthspass.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = bf3monthspass.plist; path = passes/bf3monthspass.plist; sourceTree = "<group>"; };
+		9C41075A178F32AD0008B9DD /* btnBlackFriday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnBlackFriday.png; path = CrazyRides/Images/btnBlackFriday.png; sourceTree = "<group>"; };
+		9C41075B178F32AD0008B9DD /* btnBlackFriday@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btnBlackFriday@2x.png"; path = "CrazyRides/Images/btnBlackFriday@2x.png"; sourceTree = "<group>"; };
+		9C41075C178F32AD0008B9DD /* btnBundle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnBundle.png; path = CrazyRides/Images/btnBundle.png; sourceTree = "<group>"; };
+		9C41075D178F32AD0008B9DD /* btnBundle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btnBundle@2x.png"; path = "CrazyRides/Images/btnBundle@2x.png"; sourceTree = "<group>"; };
+		9C41075E178F32AD0008B9DD /* btnCottonCandy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnCottonCandy.png; path = CrazyRides/Images/btnCottonCandy.png; sourceTree = "<group>"; };
+		9C41075F178F32AD0008B9DD /* btnCottonCandy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btnCottonCandy@2x.png"; path = "CrazyRides/Images/btnCottonCandy@2x.png"; sourceTree = "<group>"; };
+		9C410760178F32AD0008B9DD /* btnReserveSeats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnReserveSeats.png; path = CrazyRides/Images/btnReserveSeats.png; sourceTree = "<group>"; };
+		9C410761178F32AD0008B9DD /* btnReserveSeats@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btnReserveSeats@2x.png"; path = "CrazyRides/Images/btnReserveSeats@2x.png"; sourceTree = "<group>"; };
+		9C410762178F32AD0008B9DD /* btnSeatBF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnSeatBF.png; path = CrazyRides/Images/btnSeatBF.png; sourceTree = "<group>"; };
+		9C410763178F32AD0008B9DD /* btnSeatBF@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btnSeatBF@2x.png"; path = "CrazyRides/Images/btnSeatBF@2x.png"; sourceTree = "<group>"; };
+		9C410764178F32AD0008B9DD /* btnSeatWR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnSeatWR.png; path = CrazyRides/Images/btnSeatWR.png; sourceTree = "<group>"; };
+		9C410765178F32AD0008B9DD /* btnSeatWR@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btnSeatWR@2x.png"; path = "CrazyRides/Images/btnSeatWR@2x.png"; sourceTree = "<group>"; };
+		9C410766178F32AD0008B9DD /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = title.png; path = CrazyRides/Images/title.png; sourceTree = "<group>"; };
+		9C410767178F32AD0008B9DD /* title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "title@2x.png"; path = "CrazyRides/Images/title@2x.png"; sourceTree = "<group>"; };
+		9C8229921779D13500484A3A /* ww3monthspass.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; name = ww3monthspass.pkpass; path = passes/ww3monthspass.pkpass; sourceTree = "<group>"; };
+		9C8229961779D1AF00484A3A /* cottoncandy2for1.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; name = cottoncandy2for1.pkpass; path = passes/cottoncandy2for1.pkpass; sourceTree = "<group>"; };
+		9C8736A51790B4B7003B2291 /* Credits.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Credits.txt; sourceTree = "<group>"; };
+		9CA12B5C177B075500BA358B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = passes/bf3monthspass/icon.png; sourceTree = "<group>"; };
+		9CA12B5D177B075500BA358B /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "passes/bf3monthspass/icon@2x.png"; sourceTree = "<group>"; };
+		9CA12B5E177B075500BA358B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = passes/bf3monthspass/logo.png; sourceTree = "<group>"; };
+		9CA12B5F177B075500BA358B /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo@2x.png"; path = "passes/bf3monthspass/logo@2x.png"; sourceTree = "<group>"; };
+		9CA12B60177B075500BA358B /* pass.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = pass.json; path = passes/bf3monthspass/pass.json; sourceTree = "<group>"; };
+		9CA12B61177B075500BA358B /* strip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = strip.png; path = passes/bf3monthspass/strip.png; sourceTree = "<group>"; };
+		9CA12B62177B075500BA358B /* strip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "strip@2x.png"; path = "passes/bf3monthspass/strip@2x.png"; sourceTree = "<group>"; };
+		9CFF95A71775CEFE00B07474 /* CrazyRides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyRides.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CFF95AA1775CEFE00B07474 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9CFF95AC1775CEFE00B07474 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9CFF95AE1775CEFE00B07474 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9CFF95B21775CEFE00B07474 /* CrazyRides-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrazyRides-Info.plist"; sourceTree = "<group>"; };
+		9CFF95B41775CEFE00B07474 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9CFF95B61775CEFE00B07474 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9CFF95B81775CEFE00B07474 /* CrazyRides-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrazyRides-Prefix.pch"; sourceTree = "<group>"; };
+		9CFF95B91775CEFE00B07474 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9CFF95BA1775CEFE00B07474 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9CFF95BD1775CEFE00B07474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CFF95BF1775CEFE00B07474 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = CrazyRides/MasterViewController.h; sourceTree = "<group>"; };
+		9CFF95C01775CEFE00B07474 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = CrazyRides/MasterViewController.m; sourceTree = "<group>"; };
+		9CFF95C51775CEFE00B07474 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CrazyRides/Images.xcassets; sourceTree = "<group>"; };
+		9CFF95CB1775CEFE00B07474 /* CrazyRidesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrazyRidesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CFF95CC1775CEFE00B07474 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9CFF95D41775CEFE00B07474 /* CrazyRidesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrazyRidesTests-Info.plist"; sourceTree = "<group>"; };
+		9CFF95D61775CEFE00B07474 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9CFF95D81775CEFE00B07474 /* CrazyRidesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrazyRidesTests.m; sourceTree = "<group>"; };
+		9CFF95E21775D25800B07474 /* BookSeatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookSeatViewController.h; path = CrazyRides/BookSeatViewController.h; sourceTree = "<group>"; };
+		9CFF95E31775D25800B07474 /* BookSeatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookSeatViewController.m; path = CrazyRides/BookSeatViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CFF95A41775CEFE00B07474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CFF95AD1775CEFE00B07474 /* CoreGraphics.framework in Frameworks */,
+				9CFF95AF1775CEFE00B07474 /* UIKit.framework in Frameworks */,
+				9CFF95AB1775CEFE00B07474 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CFF95C81775CEFE00B07474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CFF95CD1775CEFE00B07474 /* XCTest.framework in Frameworks */,
+				9CFF95CF1775CEFE00B07474 /* UIKit.framework in Frameworks */,
+				9CFF95CE1775CEFE00B07474 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C299834178F0E7F0022F779 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9C41075A178F32AD0008B9DD /* btnBlackFriday.png */,
+				9C41075B178F32AD0008B9DD /* btnBlackFriday@2x.png */,
+				9C41075C178F32AD0008B9DD /* btnBundle.png */,
+				9C41075D178F32AD0008B9DD /* btnBundle@2x.png */,
+				9C41075E178F32AD0008B9DD /* btnCottonCandy.png */,
+				9C41075F178F32AD0008B9DD /* btnCottonCandy@2x.png */,
+				9C410760178F32AD0008B9DD /* btnReserveSeats.png */,
+				9C410761178F32AD0008B9DD /* btnReserveSeats@2x.png */,
+				9C410762178F32AD0008B9DD /* btnSeatBF.png */,
+				9C410763178F32AD0008B9DD /* btnSeatBF@2x.png */,
+				9C410764178F32AD0008B9DD /* btnSeatWR.png */,
+				9C410765178F32AD0008B9DD /* btnSeatWR@2x.png */,
+				9C410766178F32AD0008B9DD /* title.png */,
+				9C410767178F32AD0008B9DD /* title@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		9C4762A4177AFCC4004BB219 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9CFF95BF1775CEFE00B07474 /* MasterViewController.h */,
+				9CFF95C01775CEFE00B07474 /* MasterViewController.m */,
+				9CFF95E21775D25800B07474 /* BookSeatViewController.h */,
+				9CFF95E31775D25800B07474 /* BookSeatViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9C4762A5177AFCD3004BB219 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9C299834178F0E7F0022F779 /* Images */,
+				9CFF95BC1775CEFE00B07474 /* Main.storyboard */,
+				9CFF95C51775CEFE00B07474 /* Images.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		9C4762A6177AFD06004BB219 /* CrazyRides */ = {
+			isa = PBXGroup;
+			children = (
+				9C4762A4177AFCC4004BB219 /* ViewControllers */,
+				9CFF95B01775CEFE00B07474 /* AppDelegate */,
+				9C4762A5177AFCD3004BB219 /* Assets */,
+				9CFF95E51775D76700B07474 /* Passes */,
+			);
+			name = CrazyRides;
+			sourceTree = "<group>";
+		};
+		9CA12B58177B06D400BA358B /* BlackFridayPassSource */ = {
+			isa = PBXGroup;
+			children = (
+				9CA12B5C177B075500BA358B /* icon.png */,
+				9CA12B5D177B075500BA358B /* icon@2x.png */,
+				9CA12B5E177B075500BA358B /* logo.png */,
+				9CA12B5F177B075500BA358B /* logo@2x.png */,
+				9CA12B60177B075500BA358B /* pass.json */,
+				9CA12B61177B075500BA358B /* strip.png */,
+				9CA12B62177B075500BA358B /* strip@2x.png */,
+			);
+			name = BlackFridayPassSource;
+			sourceTree = "<group>";
+		};
+		9CA12B5B177B06FC00BA358B /* CompiledPases */ = {
+			isa = PBXGroup;
+			children = (
+				9C8229961779D1AF00484A3A /* cottoncandy2for1.pkpass */,
+				9C8229921779D13500484A3A /* ww3monthspass.pkpass */,
+				9C10766E1779A2D0001F712B /* bf3monthspass.pkpass */,
+			);
+			name = CompiledPases;
+			sourceTree = "<group>";
+		};
+		9CA12B7F177B076C00BA358B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				9C10768D1779AC1E001F712B /* bf3monthspass.plist */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		9CFF959E1775CEFE00B07474 = {
+			isa = PBXGroup;
+			children = (
+				9C8736A51790B4B7003B2291 /* Credits.txt */,
+				9C4762A6177AFD06004BB219 /* CrazyRides */,
+				9CFF95A91775CEFE00B07474 /* Frameworks */,
+				9CFF95A81775CEFE00B07474 /* Products */,
+				9CFF95B11775CEFE00B07474 /* Supporting Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9CFF95A81775CEFE00B07474 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CFF95A71775CEFE00B07474 /* CrazyRides.app */,
+				9CFF95CB1775CEFE00B07474 /* CrazyRidesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CFF95A91775CEFE00B07474 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CFF95AA1775CEFE00B07474 /* Foundation.framework */,
+				9CFF95AC1775CEFE00B07474 /* CoreGraphics.framework */,
+				9CFF95AE1775CEFE00B07474 /* UIKit.framework */,
+				9CFF95CC1775CEFE00B07474 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CFF95B01775CEFE00B07474 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9CFF95B91775CEFE00B07474 /* AppDelegate.h */,
+				9CFF95BA1775CEFE00B07474 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			path = CrazyRides;
+			sourceTree = "<group>";
+		};
+		9CFF95B11775CEFE00B07474 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CFF95D21775CEFE00B07474 /* CrazyRidesTests */,
+				9CFF95B21775CEFE00B07474 /* CrazyRides-Info.plist */,
+				9CFF95B31775CEFE00B07474 /* InfoPlist.strings */,
+				9CFF95B61775CEFE00B07474 /* main.m */,
+				9CFF95B81775CEFE00B07474 /* CrazyRides-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = CrazyRides;
+			sourceTree = "<group>";
+		};
+		9CFF95D21775CEFE00B07474 /* CrazyRidesTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CFF95D81775CEFE00B07474 /* CrazyRidesTests.m */,
+				9CFF95D31775CEFE00B07474 /* Supporting Files */,
+			);
+			path = CrazyRidesTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		9CFF95D31775CEFE00B07474 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CFF95D41775CEFE00B07474 /* CrazyRidesTests-Info.plist */,
+				9CFF95D51775CEFE00B07474 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CFF95E51775D76700B07474 /* Passes */ = {
+			isa = PBXGroup;
+			children = (
+				9CA12B7F177B076C00BA358B /* Configuration */,
+				9CA12B5B177B06FC00BA358B /* CompiledPases */,
+				9CA12B58177B06D400BA358B /* BlackFridayPassSource */,
+			);
+			name = Passes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CFF95A61775CEFE00B07474 /* CrazyRides */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CFF95DC1775CEFE00B07474 /* Build configuration list for PBXNativeTarget "CrazyRides" */;
+			buildPhases = (
+				9CFF95A31775CEFE00B07474 /* Sources */,
+				9CFF95A41775CEFE00B07474 /* Frameworks */,
+				9CFF95A51775CEFE00B07474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrazyRides;
+			productName = CrazyRides;
+			productReference = 9CFF95A71775CEFE00B07474 /* CrazyRides.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CFF95CA1775CEFE00B07474 /* CrazyRidesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CFF95DF1775CEFE00B07474 /* Build configuration list for PBXNativeTarget "CrazyRidesTests" */;
+			buildPhases = (
+				9CFF95C71775CEFE00B07474 /* Sources */,
+				9CFF95C81775CEFE00B07474 /* Frameworks */,
+				9CFF95C91775CEFE00B07474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CFF95D11775CEFE00B07474 /* PBXTargetDependency */,
+			);
+			name = CrazyRidesTests;
+			productName = CrazyRidesTests;
+			productReference = 9CFF95CB1775CEFE00B07474 /* CrazyRidesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CFF959F1775CEFE00B07474 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Underplot ltd";
+				TargetAttributes = {
+					9CFF95CA1775CEFE00B07474 = {
+						TestTargetID = 9CFF95A61775CEFE00B07474;
+					};
+				};
+			};
+			buildConfigurationList = 9CFF95A21775CEFE00B07474 /* Build configuration list for PBXProject "CrazyRides" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CFF959E1775CEFE00B07474;
+			productRefGroup = 9CFF95A81775CEFE00B07474 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CFF95A61775CEFE00B07474 /* CrazyRides */,
+				9CFF95CA1775CEFE00B07474 /* CrazyRidesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CFF95A51775CEFE00B07474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CFF95C61775CEFE00B07474 /* Images.xcassets in Resources */,
+				9C8229941779D13500484A3A /* ww3monthspass.pkpass in Resources */,
+				9C410775178F32AD0008B9DD /* title@2x.png in Resources */,
+				9CFF95B51775CEFE00B07474 /* InfoPlist.strings in Resources */,
+				9C41076F178F32AD0008B9DD /* btnReserveSeats@2x.png in Resources */,
+				9C410768178F32AD0008B9DD /* btnBlackFriday.png in Resources */,
+				9CFF95BE1775CEFE00B07474 /* Main.storyboard in Resources */,
+				9C8736A61790B4B7003B2291 /* Credits.txt in Resources */,
+				9C410771178F32AD0008B9DD /* btnSeatBF@2x.png in Resources */,
+				9C410769178F32AD0008B9DD /* btnBlackFriday@2x.png in Resources */,
+				9C41076A178F32AD0008B9DD /* btnBundle.png in Resources */,
+				9C41076D178F32AD0008B9DD /* btnCottonCandy@2x.png in Resources */,
+				9C410774178F32AD0008B9DD /* title.png in Resources */,
+				9C10766F1779A2D0001F712B /* bf3monthspass.pkpass in Resources */,
+				9C410770178F32AD0008B9DD /* btnSeatBF.png in Resources */,
+				9C41076E178F32AD0008B9DD /* btnReserveSeats.png in Resources */,
+				9C410772178F32AD0008B9DD /* btnSeatWR.png in Resources */,
+				9C41076C178F32AD0008B9DD /* btnCottonCandy.png in Resources */,
+				9C410773178F32AD0008B9DD /* btnSeatWR@2x.png in Resources */,
+				9C41076B178F32AD0008B9DD /* btnBundle@2x.png in Resources */,
+				9C58528317819704002DC2F8 /* bf3monthspass.plist in Resources */,
+				9C8229981779D1AF00484A3A /* cottoncandy2for1.pkpass in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CFF95C91775CEFE00B07474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CFF95D71775CEFE00B07474 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CFF95A31775CEFE00B07474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CFF95BB1775CEFE00B07474 /* AppDelegate.m in Sources */,
+				9CFF95C11775CEFE00B07474 /* MasterViewController.m in Sources */,
+				9CFF95E41775D25800B07474 /* BookSeatViewController.m in Sources */,
+				9CFF95B71775CEFE00B07474 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CFF95C71775CEFE00B07474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CFF95D91775CEFE00B07474 /* CrazyRidesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CFF95D11775CEFE00B07474 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFF95A61775CEFE00B07474 /* CrazyRides */;
+			targetProxy = 9CFF95D01775CEFE00B07474 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CFF95B31775CEFE00B07474 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CFF95B41775CEFE00B07474 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9CFF95BC1775CEFE00B07474 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CFF95BD1775CEFE00B07474 /* Base */,
+			);
+			name = Main.storyboard;
+			path = CrazyRides;
+			sourceTree = "<group>";
+		};
+		9CFF95D51775CEFE00B07474 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CFF95D61775CEFE00B07474 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CFF95DA1775CEFE00B07474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9CFF95DB1775CEFE00B07474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CFF95DD1775CEFE00B07474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrazyRides/CrazyRides-Prefix.pch";
+				INFOPLIST_FILE = "CrazyRides/CrazyRides-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9CFF95DE1775CEFE00B07474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrazyRides/CrazyRides-Prefix.pch";
+				INFOPLIST_FILE = "CrazyRides/CrazyRides-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9CFF95E01775CEFE00B07474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CrazyRides.app/CrazyRides";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrazyRides/CrazyRides-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CrazyRidesTests/CrazyRidesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9CFF95E11775CEFE00B07474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CrazyRides.app/CrazyRides";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrazyRides/CrazyRides-Prefix.pch";
+				INFOPLIST_FILE = "CrazyRidesTests/CrazyRidesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CFF95A21775CEFE00B07474 /* Build configuration list for PBXProject "CrazyRides" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CFF95DA1775CEFE00B07474 /* Debug */,
+				9CFF95DB1775CEFE00B07474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CFF95DC1775CEFE00B07474 /* Build configuration list for PBXNativeTarget "CrazyRides" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CFF95DD1775CEFE00B07474 /* Debug */,
+				9CFF95DE1775CEFE00B07474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CFF95DF1775CEFE00B07474 /* Build configuration list for PBXNativeTarget "CrazyRidesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CFF95E01775CEFE00B07474 /* Debug */,
+				9CFF95E11775CEFE00B07474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CFF959F1775CEFE00B07474 /* Project object */;
+}

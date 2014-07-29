@@ -1,0 +1,3 @@
+AirDrop
+
+Share photos, documents, URLs and other types of data with multiple devices nearby by adding AirDrop support to your app. By simply adding the Activity sheet, all the details of sharing your content peer-to-peer is handled for you—no network or setup required. And with Wi-Fi peer-to-peer technology you can use the same underlying technology to directly connect with multiple devices nearby, and let your users easily share information with each other.

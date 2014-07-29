@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>27F60151-075E-43FB-8958-8AF155DDF307</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SHCReversiGame</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>14E0E3AD-7813-43A7-B8F9-713A971AA0DD</key>
+		<string>ssh://github.com/gregheo/iOS-Reversi.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SHCReversiGame.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>14E0E3AD-7813-43A7-B8F9-713A971AA0DD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/gregheo/iOS-Reversi.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>14E0E3AD-7813-43A7-B8F9-713A971AA0DD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>14E0E3AD-7813-43A7-B8F9-713A971AA0DD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-Reversi</string>
+		</dict>
+	</array>
+</dict>
+</plist>

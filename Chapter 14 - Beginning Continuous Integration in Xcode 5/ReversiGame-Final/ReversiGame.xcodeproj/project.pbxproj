@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72347606167601BE00185647 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72347605167601BE00185647 /* main.m */; };
+		7234760A167604FA00185647 /* MulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72347609167604FA00185647 /* MulticastDelegate.m */; };
+		72A5A03E1671D8F600AF63F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A5A03D1671D8F600AF63F4 /* UIKit.framework */; };
+		72A5A0401671D8F600AF63F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A5A03F1671D8F600AF63F4 /* Foundation.framework */; };
+		72A5A0421671D8F600AF63F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A5A0411671D8F600AF63F4 /* CoreGraphics.framework */; };
+		72A5A0481671D8F600AF63F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A0461671D8F600AF63F4 /* InfoPlist.strings */; };
+		72A5A04E1671D8F600AF63F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A5A04D1671D8F600AF63F4 /* AppDelegate.m */; };
+		72A5A0501671D8F600AF63F4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A04F1671D8F600AF63F4 /* Default.png */; };
+		72A5A0521671D8F600AF63F4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A0511671D8F600AF63F4 /* Default@2x.png */; };
+		72A5A0541671D8F600AF63F4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A0531671D8F600AF63F4 /* Default-568h@2x.png */; };
+		72A5A0571671D8F600AF63F4 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A5A0561671D8F600AF63F4 /* GameViewController.m */; };
+		72A5A05A1671D8F600AF63F4 /* GameViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A0581671D8F600AF63F4 /* GameViewController~ipad.xib */; };
+		72A5A0631671D8F600AF63F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A5A03D1671D8F600AF63F4 /* UIKit.framework */; };
+		72A5A0641671D8F600AF63F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A5A03F1671D8F600AF63F4 /* Foundation.framework */; };
+		72A5A06C1671D8F600AF63F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A06A1671D8F600AF63F4 /* InfoPlist.strings */; };
+		72A5A08B1671DA3E00AF63F4 /* Reversi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A0811671DA3E00AF63F4 /* Reversi.png */; };
+		72A5A08D1671DA3E00AF63F4 /* Reversi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A0831671DA3E00AF63F4 /* Reversi@2x.png */; };
+		72A5A08E1671DA3E00AF63F4 /* ReversiBlackPiece.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A0841671DA3E00AF63F4 /* ReversiBlackPiece.png */; };
+		72A5A08F1671DA3E00AF63F4 /* ReversiBlackPiece@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A0851671DA3E00AF63F4 /* ReversiBlackPiece@2x.png */; };
+		72A5A0901671DA3E00AF63F4 /* ReversiWhitePiece.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A0861671DA3E00AF63F4 /* ReversiWhitePiece.png */; };
+		72C7E164168CF706009DA963 /* ReversiWhitePiece@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C7E163168CF706009DA963 /* ReversiWhitePiece@2x.png */; };
+		72C7E168168CFACC009DA963 /* GameBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C7E167168CFACC009DA963 /* GameBoard.m */; };
+		72C7E16F168D8A25009DA963 /* ReversiBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C7E16E168D8A25009DA963 /* ReversiBoard.m */; };
+		72C7E172168D8A89009DA963 /* BoardSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C7E171168D8A89009DA963 /* BoardSquare.m */; };
+		72C7E175168D8AE3009DA963 /* ReversiBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C7E174168D8AE3009DA963 /* ReversiBoardView.m */; };
+		72D4A2701694E80600DBE2D6 /* ComputerOpponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D4A26F1694E80600DBE2D6 /* ComputerOpponent.m */; };
+		78B5B2F317CAF2B9003B962D /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 78B5B2F117CAF2B9003B962D /* play.png */; };
+		78B5B2F417CAF2B9003B962D /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78B5B2F217CAF2B9003B962D /* play@2x.png */; };
+		CC5724D31789DD5D0078B900 /* rrbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = CC5724D11789DD5D0078B900 /* rrbutton.png */; };
+		CC5724D41789DD5D0078B900 /* rrbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC5724D21789DD5D0078B900 /* rrbutton@2x.png */; };
+		CC7F548A1792966100732CBE /* GameViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC7F54881792966100732CBE /* GameViewController~iphone.xib */; };
+		CC7F548C179297F400732CBE /* phone-board@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC7F548B179297F400732CBE /* phone-board@2x.png */; };
+		CC7F548E1792988F00732CBE /* phone-title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC7F548D1792988F00732CBE /* phone-title@2x.png */; };
+		CC7F549017929CD100732CBE /* phone-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC7F548F17929CD100732CBE /* phone-button@2x.png */; };
+		CCA0B5FE1789D00F002A607C /* ReversiBlackScore.png in Resources */ = {isa = PBXBuildFile; fileRef = CCA0B5FA1789D00F002A607C /* ReversiBlackScore.png */; };
+		CCA0B5FF1789D00F002A607C /* ReversiBlackScore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCA0B5FB1789D00F002A607C /* ReversiBlackScore@2x.png */; };
+		CCA0B6001789D00F002A607C /* ReversiWhiteScore.png in Resources */ = {isa = PBXBuildFile; fileRef = CCA0B5FC1789D00F002A607C /* ReversiWhiteScore.png */; };
+		CCA0B6011789D00F002A607C /* ReversiWhiteScore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCA0B5FD1789D00F002A607C /* ReversiWhiteScore@2x.png */; };
+		CCCD809517946BBF00245371 /* GameBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCD809417946BBF00245371 /* GameBoardTests.m */; };
+		CCCD809717946F5300245371 /* ReversiBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCD809617946F5300245371 /* ReversiBoardTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72A5A0651671D8F600AF63F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72A5A0301671D8F600AF63F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72A5A0381671D8F600AF63F4;
+			remoteInfo = SHCReversiGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		72347605167601BE00185647 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		72347608167604FA00185647 /* MulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MulticastDelegate.h; sourceTree = "<group>"; };
+		72347609167604FA00185647 /* MulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MulticastDelegate.m; sourceTree = "<group>"; };
+		72A5A0391671D8F600AF63F4 /* ReversiGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReversiGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A5A03D1671D8F600AF63F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		72A5A03F1671D8F600AF63F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		72A5A0411671D8F600AF63F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		72A5A0451671D8F600AF63F4 /* ReversiGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReversiGame-Info.plist"; sourceTree = "<group>"; };
+		72A5A0471671D8F600AF63F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72A5A04B1671D8F600AF63F4 /* ReversiGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReversiGame-Prefix.pch"; sourceTree = "<group>"; };
+		72A5A04C1671D8F600AF63F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		72A5A04D1671D8F600AF63F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		72A5A04F1671D8F600AF63F4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		72A5A0511671D8F600AF63F4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		72A5A0531671D8F600AF63F4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		72A5A0551671D8F600AF63F4 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		72A5A0561671D8F600AF63F4 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		72A5A0591671D8F600AF63F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/GameViewController~ipad.xib"; sourceTree = "<group>"; };
+		72A5A0601671D8F600AF63F4 /* ReversiGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReversiGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A5A0611671D8F600AF63F4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		72A5A0691671D8F600AF63F4 /* ReversiGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReversiGameTests-Info.plist"; sourceTree = "<group>"; };
+		72A5A06B1671D8F600AF63F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72A5A0811671DA3E00AF63F4 /* Reversi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Reversi.png; path = Assets/Reversi.png; sourceTree = "<group>"; };
+		72A5A0831671DA3E00AF63F4 /* Reversi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Reversi@2x.png"; path = "Assets/Reversi@2x.png"; sourceTree = "<group>"; };
+		72A5A0841671DA3E00AF63F4 /* ReversiBlackPiece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ReversiBlackPiece.png; path = Assets/ReversiBlackPiece.png; sourceTree = "<group>"; };
+		72A5A0851671DA3E00AF63F4 /* ReversiBlackPiece@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ReversiBlackPiece@2x.png"; path = "Assets/ReversiBlackPiece@2x.png"; sourceTree = "<group>"; };
+		72A5A0861671DA3E00AF63F4 /* ReversiWhitePiece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ReversiWhitePiece.png; path = Assets/ReversiWhitePiece.png; sourceTree = "<group>"; };
+		72C7E163168CF706009DA963 /* ReversiWhitePiece@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ReversiWhitePiece@2x.png"; path = "Assets/ReversiWhitePiece@2x.png"; sourceTree = "<group>"; };
+		72C7E166168CFACC009DA963 /* GameBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameBoard.h; path = Model/GameBoard.h; sourceTree = "<group>"; };
+		72C7E167168CFACC009DA963 /* GameBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameBoard.m; path = Model/GameBoard.m; sourceTree = "<group>"; };
+		72C7E169168CFB1E009DA963 /* GameStates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameStates.h; path = Model/GameStates.h; sourceTree = "<group>"; };
+		72C7E16D168D8A25009DA963 /* ReversiBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReversiBoard.h; path = Model/ReversiBoard.h; sourceTree = "<group>"; };
+		72C7E16E168D8A25009DA963 /* ReversiBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; name = ReversiBoard.m; path = Model/ReversiBoard.m; sourceTree = "<group>"; tabWidth = 4; };
+		72C7E170168D8A89009DA963 /* BoardSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoardSquare.h; path = View/BoardSquare.h; sourceTree = "<group>"; };
+		72C7E171168D8A89009DA963 /* BoardSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoardSquare.m; path = View/BoardSquare.m; sourceTree = "<group>"; };
+		72C7E173168D8AE3009DA963 /* ReversiBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReversiBoardView.h; path = View/ReversiBoardView.h; sourceTree = "<group>"; };
+		72C7E174168D8AE3009DA963 /* ReversiBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReversiBoardView.m; path = View/ReversiBoardView.m; sourceTree = "<group>"; };
+		72C7E176168ED379009DA963 /* BoardDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BoardDelegate.h; path = Model/BoardDelegate.h; sourceTree = "<group>"; };
+		72C7E17716920352009DA963 /* ReversiBoardDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReversiBoardDelegate.h; path = Model/ReversiBoardDelegate.h; sourceTree = "<group>"; };
+		72D4A26E1694E80600DBE2D6 /* ComputerOpponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComputerOpponent.h; path = Model/ComputerOpponent.h; sourceTree = "<group>"; };
+		72D4A26F1694E80600DBE2D6 /* ComputerOpponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComputerOpponent.m; path = Model/ComputerOpponent.m; sourceTree = "<group>"; };
+		78B5B2F117CAF2B9003B962D /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = Assets/play.png; sourceTree = "<group>"; };
+		78B5B2F217CAF2B9003B962D /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play@2x.png"; path = "Assets/play@2x.png"; sourceTree = "<group>"; };
+		CC5724D11789DD5D0078B900 /* rrbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rrbutton.png; path = Assets/rrbutton.png; sourceTree = "<group>"; };
+		CC5724D21789DD5D0078B900 /* rrbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rrbutton@2x.png"; path = "Assets/rrbutton@2x.png"; sourceTree = "<group>"; };
+		CC7F54891792966100732CBE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/GameViewController~iphone.xib"; sourceTree = "<group>"; };
+		CC7F548B179297F400732CBE /* phone-board@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "phone-board@2x.png"; path = "Assets/phone-board@2x.png"; sourceTree = "<group>"; };
+		CC7F548D1792988F00732CBE /* phone-title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "phone-title@2x.png"; path = "Assets/phone-title@2x.png"; sourceTree = "<group>"; };
+		CC7F548F17929CD100732CBE /* phone-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "phone-button@2x.png"; path = "Assets/phone-button@2x.png"; sourceTree = "<group>"; };
+		CCA0B5FA1789D00F002A607C /* ReversiBlackScore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ReversiBlackScore.png; path = Assets/ReversiBlackScore.png; sourceTree = "<group>"; };
+		CCA0B5FB1789D00F002A607C /* ReversiBlackScore@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ReversiBlackScore@2x.png"; path = "Assets/ReversiBlackScore@2x.png"; sourceTree = "<group>"; };
+		CCA0B5FC1789D00F002A607C /* ReversiWhiteScore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ReversiWhiteScore.png; path = Assets/ReversiWhiteScore.png; sourceTree = "<group>"; };
+		CCA0B5FD1789D00F002A607C /* ReversiWhiteScore@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ReversiWhiteScore@2x.png"; path = "Assets/ReversiWhiteScore@2x.png"; sourceTree = "<group>"; };
+		CCCD809417946BBF00245371 /* GameBoardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoardTests.m; sourceTree = "<group>"; tabWidth = 4; };
+		CCCD809617946F5300245371 /* ReversiBoardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = ReversiBoardTests.m; sourceTree = "<group>"; tabWidth = 4; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72A5A0361671D8F600AF63F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A5A03E1671D8F600AF63F4 /* UIKit.framework in Frameworks */,
+				72A5A0401671D8F600AF63F4 /* Foundation.framework in Frameworks */,
+				72A5A0421671D8F600AF63F4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A5A05C1671D8F600AF63F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A5A0631671D8F600AF63F4 /* UIKit.framework in Frameworks */,
+				72A5A0641671D8F600AF63F4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72347607167604FA00185647 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				72347608167604FA00185647 /* MulticastDelegate.h */,
+				72347609167604FA00185647 /* MulticastDelegate.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		72A5A02E1671D8F600AF63F4 = {
+			isa = PBXGroup;
+			children = (
+				72A5A0431671D8F600AF63F4 /* ReversiGame */,
+				72A5A0671671D8F600AF63F4 /* ReversiGameTests */,
+				72A5A03C1671D8F600AF63F4 /* Frameworks */,
+				72A5A03A1671D8F600AF63F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72A5A03A1671D8F600AF63F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72A5A0391671D8F600AF63F4 /* ReversiGame.app */,
+				72A5A0601671D8F600AF63F4 /* ReversiGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72A5A03C1671D8F600AF63F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72A5A03D1671D8F600AF63F4 /* UIKit.framework */,
+				72A5A03F1671D8F600AF63F4 /* Foundation.framework */,
+				72A5A0411671D8F600AF63F4 /* CoreGraphics.framework */,
+				72A5A0611671D8F600AF63F4 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72A5A0431671D8F600AF63F4 /* ReversiGame */ = {
+			isa = PBXGroup;
+			children = (
+				72347607167604FA00185647 /* Util */,
+				72A5A07C1671D9E100AF63F4 /* Assets */,
+				72A5A07B1671D9D700AF63F4 /* View */,
+				72A5A07A1671D9D200AF63F4 /* Model */,
+				72A5A04C1671D8F600AF63F4 /* AppDelegate.h */,
+				72A5A04D1671D8F600AF63F4 /* AppDelegate.m */,
+				72A5A0551671D8F600AF63F4 /* GameViewController.h */,
+				72A5A0561671D8F600AF63F4 /* GameViewController.m */,
+				72A5A0581671D8F600AF63F4 /* GameViewController~ipad.xib */,
+				CC7F54881792966100732CBE /* GameViewController~iphone.xib */,
+				72A5A0441671D8F600AF63F4 /* Supporting Files */,
+			);
+			name = ReversiGame;
+			path = SHCReversiGame;
+			sourceTree = "<group>";
+		};
+		72A5A0441671D8F600AF63F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72347605167601BE00185647 /* main.m */,
+				72A5A0451671D8F600AF63F4 /* ReversiGame-Info.plist */,
+				72A5A0461671D8F600AF63F4 /* InfoPlist.strings */,
+				72A5A04B1671D8F600AF63F4 /* ReversiGame-Prefix.pch */,
+				72A5A04F1671D8F600AF63F4 /* Default.png */,
+				72A5A0511671D8F600AF63F4 /* Default@2x.png */,
+				72A5A0531671D8F600AF63F4 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72A5A0671671D8F600AF63F4 /* ReversiGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				72A5A0681671D8F600AF63F4 /* Supporting Files */,
+				CCCD809417946BBF00245371 /* GameBoardTests.m */,
+				CCCD809617946F5300245371 /* ReversiBoardTests.m */,
+			);
+			name = ReversiGameTests;
+			path = SHCReversiGameTests;
+			sourceTree = "<group>";
+		};
+		72A5A0681671D8F600AF63F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72A5A0691671D8F600AF63F4 /* ReversiGameTests-Info.plist */,
+				72A5A06A1671D8F600AF63F4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72A5A07A1671D9D200AF63F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72C7E166168CFACC009DA963 /* GameBoard.h */,
+				72C7E167168CFACC009DA963 /* GameBoard.m */,
+				72C7E169168CFB1E009DA963 /* GameStates.h */,
+				72C7E16D168D8A25009DA963 /* ReversiBoard.h */,
+				72C7E16E168D8A25009DA963 /* ReversiBoard.m */,
+				72C7E176168ED379009DA963 /* BoardDelegate.h */,
+				72C7E17716920352009DA963 /* ReversiBoardDelegate.h */,
+				72D4A26E1694E80600DBE2D6 /* ComputerOpponent.h */,
+				72D4A26F1694E80600DBE2D6 /* ComputerOpponent.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		72A5A07B1671D9D700AF63F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72C7E170168D8A89009DA963 /* BoardSquare.h */,
+				72C7E171168D8A89009DA963 /* BoardSquare.m */,
+				72C7E173168D8AE3009DA963 /* ReversiBoardView.h */,
+				72C7E174168D8AE3009DA963 /* ReversiBoardView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		72A5A07C1671D9E100AF63F4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				78B5B2F117CAF2B9003B962D /* play.png */,
+				78B5B2F217CAF2B9003B962D /* play@2x.png */,
+				72A5A0811671DA3E00AF63F4 /* Reversi.png */,
+				72A5A0831671DA3E00AF63F4 /* Reversi@2x.png */,
+				72A5A0841671DA3E00AF63F4 /* ReversiBlackPiece.png */,
+				72A5A0851671DA3E00AF63F4 /* ReversiBlackPiece@2x.png */,
+				72A5A0861671DA3E00AF63F4 /* ReversiWhitePiece.png */,
+				72C7E163168CF706009DA963 /* ReversiWhitePiece@2x.png */,
+				CCA0B5FA1789D00F002A607C /* ReversiBlackScore.png */,
+				CCA0B5FB1789D00F002A607C /* ReversiBlackScore@2x.png */,
+				CCA0B5FC1789D00F002A607C /* ReversiWhiteScore.png */,
+				CCA0B5FD1789D00F002A607C /* ReversiWhiteScore@2x.png */,
+				CC7F548B179297F400732CBE /* phone-board@2x.png */,
+				CC7F548F17929CD100732CBE /* phone-button@2x.png */,
+				CC7F548D1792988F00732CBE /* phone-title@2x.png */,
+				CC5724D11789DD5D0078B900 /* rrbutton.png */,
+				CC5724D21789DD5D0078B900 /* rrbutton@2x.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72A5A0381671D8F600AF63F4 /* ReversiGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72A5A0721671D8F600AF63F4 /* Build configuration list for PBXNativeTarget "ReversiGame" */;
+			buildPhases = (
+				72A5A0351671D8F600AF63F4 /* Sources */,
+				72A5A0361671D8F600AF63F4 /* Frameworks */,
+				72A5A0371671D8F600AF63F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReversiGame;
+			productName = SHCReversiGame;
+			productReference = 72A5A0391671D8F600AF63F4 /* ReversiGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72A5A05F1671D8F600AF63F4 /* ReversiGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72A5A0751671D8F600AF63F4 /* Build configuration list for PBXNativeTarget "ReversiGameTests" */;
+			buildPhases = (
+				72A5A05B1671D8F600AF63F4 /* Sources */,
+				72A5A05C1671D8F600AF63F4 /* Frameworks */,
+				72A5A05D1671D8F600AF63F4 /* Resources */,
+				72A5A05E1671D8F600AF63F4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72A5A0661671D8F600AF63F4 /* PBXTargetDependency */,
+			);
+			name = ReversiGameTests;
+			productName = SHCReversiGameTests;
+			productReference = 72A5A0601671D8F600AF63F4 /* ReversiGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72A5A0301671D8F600AF63F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "";
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Razeware LLC";
+			};
+			buildConfigurationList = 72A5A0331671D8F600AF63F4 /* Build configuration list for PBXProject "ReversiGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 72A5A02E1671D8F600AF63F4;
+			productRefGroup = 72A5A03A1671D8F600AF63F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72A5A0381671D8F600AF63F4 /* ReversiGame */,
+				72A5A05F1671D8F600AF63F4 /* ReversiGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72A5A0371671D8F600AF63F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A5A0481671D8F600AF63F4 /* InfoPlist.strings in Resources */,
+				CC7F548E1792988F00732CBE /* phone-title@2x.png in Resources */,
+				72A5A0501671D8F600AF63F4 /* Default.png in Resources */,
+				CC7F549017929CD100732CBE /* phone-button@2x.png in Resources */,
+				72A5A0521671D8F600AF63F4 /* Default@2x.png in Resources */,
+				72A5A0541671D8F600AF63F4 /* Default-568h@2x.png in Resources */,
+				CC5724D41789DD5D0078B900 /* rrbutton@2x.png in Resources */,
+				CC5724D31789DD5D0078B900 /* rrbutton.png in Resources */,
+				72A5A05A1671D8F600AF63F4 /* GameViewController~ipad.xib in Resources */,
+				CCA0B5FE1789D00F002A607C /* ReversiBlackScore.png in Resources */,
+				CCA0B6001789D00F002A607C /* ReversiWhiteScore.png in Resources */,
+				CCA0B6011789D00F002A607C /* ReversiWhiteScore@2x.png in Resources */,
+				CC7F548C179297F400732CBE /* phone-board@2x.png in Resources */,
+				72A5A08B1671DA3E00AF63F4 /* Reversi.png in Resources */,
+				72A5A08D1671DA3E00AF63F4 /* Reversi@2x.png in Resources */,
+				78B5B2F317CAF2B9003B962D /* play.png in Resources */,
+				72A5A08E1671DA3E00AF63F4 /* ReversiBlackPiece.png in Resources */,
+				CC7F548A1792966100732CBE /* GameViewController~iphone.xib in Resources */,
+				78B5B2F417CAF2B9003B962D /* play@2x.png in Resources */,
+				72A5A08F1671DA3E00AF63F4 /* ReversiBlackPiece@2x.png in Resources */,
+				72A5A0901671DA3E00AF63F4 /* ReversiWhitePiece.png in Resources */,
+				CCA0B5FF1789D00F002A607C /* ReversiBlackScore@2x.png in Resources */,
+				72C7E164168CF706009DA963 /* ReversiWhitePiece@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A5A05D1671D8F600AF63F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A5A06C1671D8F600AF63F4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72A5A05E1671D8F600AF63F4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72A5A0351671D8F600AF63F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A5A04E1671D8F600AF63F4 /* AppDelegate.m in Sources */,
+				72A5A0571671D8F600AF63F4 /* GameViewController.m in Sources */,
+				72347606167601BE00185647 /* main.m in Sources */,
+				7234760A167604FA00185647 /* MulticastDelegate.m in Sources */,
+				72C7E168168CFACC009DA963 /* GameBoard.m in Sources */,
+				72C7E16F168D8A25009DA963 /* ReversiBoard.m in Sources */,
+				72C7E172168D8A89009DA963 /* BoardSquare.m in Sources */,
+				72C7E175168D8AE3009DA963 /* ReversiBoardView.m in Sources */,
+				72D4A2701694E80600DBE2D6 /* ComputerOpponent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A5A05B1671D8F600AF63F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCCD809517946BBF00245371 /* GameBoardTests.m in Sources */,
+				CCCD809717946F5300245371 /* ReversiBoardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72A5A0661671D8F600AF63F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72A5A0381671D8F600AF63F4 /* ReversiGame */;
+			targetProxy = 72A5A0651671D8F600AF63F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		72A5A0461671D8F600AF63F4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A5A0471671D8F600AF63F4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		72A5A0581671D8F600AF63F4 /* GameViewController~ipad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A5A0591671D8F600AF63F4 /* en */,
+			);
+			name = "GameViewController~ipad.xib";
+			sourceTree = "<group>";
+		};
+		72A5A06A1671D8F600AF63F4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A5A06B1671D8F600AF63F4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CC7F54881792966100732CBE /* GameViewController~iphone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC7F54891792966100732CBE /* en */,
+			);
+			name = "GameViewController~iphone.xib";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72A5A0701671D8F600AF63F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		72A5A0711671D8F600AF63F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72A5A0731671D8F600AF63F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SHCReversiGame/ReversiGame-Prefix.pch";
+				INFOPLIST_FILE = "SHCReversiGame/ReversiGame-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = ReversiGame;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		72A5A0741671D8F600AF63F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SHCReversiGame/ReversiGame-Prefix.pch";
+				INFOPLIST_FILE = "SHCReversiGame/ReversiGame-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = ReversiGame;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		72A5A0761671D8F600AF63F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReversiGame.app/ReversiGame";
+				FRAMEWORK_SEARCH_PATHS = "$(SDKROOT)/Developer/Library/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SHCReversiGame/ReversiGame-Prefix.pch";
+				INFOPLIST_FILE = "SHCReversiGameTests/ReversiGameTests-Info.plist";
+				PRODUCT_NAME = ReversiGameTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		72A5A0771671D8F600AF63F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReversiGame.app/ReversiGame";
+				FRAMEWORK_SEARCH_PATHS = "$(SDKROOT)/Developer/Library/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SHCReversiGame/ReversiGame-Prefix.pch";
+				INFOPLIST_FILE = "SHCReversiGameTests/ReversiGameTests-Info.plist";
+				PRODUCT_NAME = ReversiGameTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72A5A0331671D8F600AF63F4 /* Build configuration list for PBXProject "ReversiGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72A5A0701671D8F600AF63F4 /* Debug */,
+				72A5A0711671D8F600AF63F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72A5A0721671D8F600AF63F4 /* Build configuration list for PBXNativeTarget "ReversiGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72A5A0731671D8F600AF63F4 /* Debug */,
+				72A5A0741671D8F600AF63F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72A5A0751671D8F600AF63F4 /* Build configuration list for PBXNativeTarget "ReversiGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72A5A0761671D8F600AF63F4 /* Debug */,
+				72A5A0771671D8F600AF63F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72A5A0301671D8F600AF63F4 /* Project object */;
+}

@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9155D101775FD7900451D1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9155D0F1775FD7900451D1B /* Foundation.framework */; };
+		C9155D121775FD7900451D1B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9155D111775FD7900451D1B /* CoreGraphics.framework */; };
+		C9155D141775FD7900451D1B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9155D131775FD7900451D1B /* UIKit.framework */; };
+		C9155D1A1775FD7900451D1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9155D181775FD7900451D1B /* InfoPlist.strings */; };
+		C9155D1C1775FD7900451D1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9155D1B1775FD7900451D1B /* main.m */; };
+		C9155D201775FD7900451D1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9155D1F1775FD7900451D1B /* AppDelegate.m */; };
+		C9155D231775FD7900451D1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9155D211775FD7900451D1B /* Main.storyboard */; };
+		C9155D261775FD7900451D1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9155D251775FD7900451D1B /* ViewController.m */; };
+		C9155D281775FD7900451D1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9155D271775FD7900451D1B /* Images.xcassets */; };
+		C9155D2F1775FD7900451D1B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9155D2E1775FD7900451D1B /* XCTest.framework */; };
+		C9155D301775FD7900451D1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9155D0F1775FD7900451D1B /* Foundation.framework */; };
+		C9155D311775FD7900451D1B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9155D131775FD7900451D1B /* UIKit.framework */; };
+		C9155D391775FD7900451D1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9155D371775FD7900451D1B /* InfoPlist.strings */; };
+		C9155D3B1775FD7900451D1B /* FlyMeThereTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9155D3A1775FD7900451D1B /* FlyMeThereTests.m */; };
+		C9155D451775FDCE00451D1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9155D441775FDCE00451D1B /* MapKit.framework */; };
+		C99A104E17A3F96500A328DF /* airports.csv in Resources */ = {isa = PBXBuildFile; fileRef = C99A104D17A3F96500A328DF /* airports.csv */; };
+		C99A105117A3F97A00A328DF /* Airport.m in Sources */ = {isa = PBXBuildFile; fileRef = C99A105017A3F97A00A328DF /* Airport.m */; };
+		C99A109B17A56FF400A328DF /* MapKitHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = C99A109A17A56FF400A328DF /* MapKitHelpers.m */; };
+		C99A109E17A5700700A328DF /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = C99A109D17A5700700A328DF /* Route.m */; };
+		C9B9E74217A70A230004F7E0 /* DirectionsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B9E74117A70A230004F7E0 /* DirectionsListViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9155D321775FD7900451D1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9155D041775FD7900451D1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9155D0B1775FD7900451D1B;
+			remoteInfo = FlyMeThere;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9155D0C1775FD7900451D1B /* FlyMeThere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyMeThere.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9155D0F1775FD7900451D1B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9155D111775FD7900451D1B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C9155D131775FD7900451D1B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C9155D171775FD7900451D1B /* FlyMeThere-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlyMeThere-Info.plist"; sourceTree = "<group>"; };
+		C9155D191775FD7900451D1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9155D1B1775FD7900451D1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9155D1D1775FD7900451D1B /* FlyMeThere-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlyMeThere-Prefix.pch"; sourceTree = "<group>"; };
+		C9155D1E1775FD7900451D1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C9155D1F1775FD7900451D1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C9155D221775FD7900451D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9155D241775FD7900451D1B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C9155D251775FD7900451D1B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C9155D271775FD7900451D1B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C9155D2D1775FD7900451D1B /* FlyMeThereTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyMeThereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9155D2E1775FD7900451D1B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C9155D361775FD7900451D1B /* FlyMeThereTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlyMeThereTests-Info.plist"; sourceTree = "<group>"; };
+		C9155D381775FD7900451D1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9155D3A1775FD7900451D1B /* FlyMeThereTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyMeThereTests.m; sourceTree = "<group>"; };
+		C9155D441775FDCE00451D1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C99A104D17A3F96500A328DF /* airports.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airports.csv; sourceTree = "<group>"; };
+		C99A104F17A3F97A00A328DF /* Airport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Airport.h; sourceTree = "<group>"; };
+		C99A105017A3F97A00A328DF /* Airport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Airport.m; sourceTree = "<group>"; };
+		C99A109917A56FF400A328DF /* MapKitHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapKitHelpers.h; sourceTree = "<group>"; };
+		C99A109A17A56FF400A328DF /* MapKitHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapKitHelpers.m; sourceTree = "<group>"; };
+		C99A109C17A5700700A328DF /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
+		C99A109D17A5700700A328DF /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
+		C9B9E74017A70A230004F7E0 /* DirectionsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionsListViewController.h; sourceTree = "<group>"; };
+		C9B9E74117A70A230004F7E0 /* DirectionsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionsListViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9155D091775FD7900451D1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9155D451775FDCE00451D1B /* MapKit.framework in Frameworks */,
+				C9155D121775FD7900451D1B /* CoreGraphics.framework in Frameworks */,
+				C9155D141775FD7900451D1B /* UIKit.framework in Frameworks */,
+				C9155D101775FD7900451D1B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9155D2A1775FD7900451D1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9155D2F1775FD7900451D1B /* XCTest.framework in Frameworks */,
+				C9155D311775FD7900451D1B /* UIKit.framework in Frameworks */,
+				C9155D301775FD7900451D1B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9155D031775FD7900451D1B = {
+			isa = PBXGroup;
+			children = (
+				C9155D151775FD7900451D1B /* FlyMeThere */,
+				C9155D341775FD7900451D1B /* FlyMeThereTests */,
+				C9155D0E1775FD7900451D1B /* Frameworks */,
+				C9155D0D1775FD7900451D1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9155D0D1775FD7900451D1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9155D0C1775FD7900451D1B /* FlyMeThere.app */,
+				C9155D2D1775FD7900451D1B /* FlyMeThereTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9155D0E1775FD7900451D1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9155D441775FDCE00451D1B /* MapKit.framework */,
+				C9155D0F1775FD7900451D1B /* Foundation.framework */,
+				C9155D111775FD7900451D1B /* CoreGraphics.framework */,
+				C9155D131775FD7900451D1B /* UIKit.framework */,
+				C9155D2E1775FD7900451D1B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9155D151775FD7900451D1B /* FlyMeThere */ = {
+			isa = PBXGroup;
+			children = (
+				C9155D1E1775FD7900451D1B /* AppDelegate.h */,
+				C9155D1F1775FD7900451D1B /* AppDelegate.m */,
+				C9155D211775FD7900451D1B /* Main.storyboard */,
+				C9155D241775FD7900451D1B /* ViewController.h */,
+				C9155D251775FD7900451D1B /* ViewController.m */,
+				C9B9E74017A70A230004F7E0 /* DirectionsListViewController.h */,
+				C9B9E74117A70A230004F7E0 /* DirectionsListViewController.m */,
+				C99A109917A56FF400A328DF /* MapKitHelpers.h */,
+				C99A109A17A56FF400A328DF /* MapKitHelpers.m */,
+				C99A104F17A3F97A00A328DF /* Airport.h */,
+				C99A105017A3F97A00A328DF /* Airport.m */,
+				C99A109C17A5700700A328DF /* Route.h */,
+				C99A109D17A5700700A328DF /* Route.m */,
+				C9155D271775FD7900451D1B /* Images.xcassets */,
+				C99A104D17A3F96500A328DF /* airports.csv */,
+				C9155D161775FD7900451D1B /* Supporting Files */,
+			);
+			path = FlyMeThere;
+			sourceTree = "<group>";
+		};
+		C9155D161775FD7900451D1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9155D171775FD7900451D1B /* FlyMeThere-Info.plist */,
+				C9155D181775FD7900451D1B /* InfoPlist.strings */,
+				C9155D1B1775FD7900451D1B /* main.m */,
+				C9155D1D1775FD7900451D1B /* FlyMeThere-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9155D341775FD7900451D1B /* FlyMeThereTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9155D3A1775FD7900451D1B /* FlyMeThereTests.m */,
+				C9155D351775FD7900451D1B /* Supporting Files */,
+			);
+			path = FlyMeThereTests;
+			sourceTree = "<group>";
+		};
+		C9155D351775FD7900451D1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9155D361775FD7900451D1B /* FlyMeThereTests-Info.plist */,
+				C9155D371775FD7900451D1B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9155D0B1775FD7900451D1B /* FlyMeThere */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9155D3E1775FD7900451D1B /* Build configuration list for PBXNativeTarget "FlyMeThere" */;
+			buildPhases = (
+				C9155D081775FD7900451D1B /* Sources */,
+				C9155D091775FD7900451D1B /* Frameworks */,
+				C9155D0A1775FD7900451D1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlyMeThere;
+			productName = FlyMeThere;
+			productReference = C9155D0C1775FD7900451D1B /* FlyMeThere.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9155D2C1775FD7900451D1B /* FlyMeThereTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9155D411775FD7900451D1B /* Build configuration list for PBXNativeTarget "FlyMeThereTests" */;
+			buildPhases = (
+				C9155D291775FD7900451D1B /* Sources */,
+				C9155D2A1775FD7900451D1B /* Frameworks */,
+				C9155D2B1775FD7900451D1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9155D331775FD7900451D1B /* PBXTargetDependency */,
+			);
+			name = FlyMeThereTests;
+			productName = FlyMeThereTests;
+			productReference = C9155D2D1775FD7900451D1B /* FlyMeThereTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9155D041775FD7900451D1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Matt Galloway";
+				TargetAttributes = {
+					C9155D0B1775FD7900451D1B = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					C9155D2C1775FD7900451D1B = {
+						TestTargetID = C9155D0B1775FD7900451D1B;
+					};
+				};
+			};
+			buildConfigurationList = C9155D071775FD7900451D1B /* Build configuration list for PBXProject "FlyMeThere" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9155D031775FD7900451D1B;
+			productRefGroup = C9155D0D1775FD7900451D1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9155D0B1775FD7900451D1B /* FlyMeThere */,
+				C9155D2C1775FD7900451D1B /* FlyMeThereTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9155D0A1775FD7900451D1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99A104E17A3F96500A328DF /* airports.csv in Resources */,
+				C9155D281775FD7900451D1B /* Images.xcassets in Resources */,
+				C9155D1A1775FD7900451D1B /* InfoPlist.strings in Resources */,
+				C9155D231775FD7900451D1B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9155D2B1775FD7900451D1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9155D391775FD7900451D1B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9155D081775FD7900451D1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B9E74217A70A230004F7E0 /* DirectionsListViewController.m in Sources */,
+				C9155D261775FD7900451D1B /* ViewController.m in Sources */,
+				C99A105117A3F97A00A328DF /* Airport.m in Sources */,
+				C9155D201775FD7900451D1B /* AppDelegate.m in Sources */,
+				C99A109E17A5700700A328DF /* Route.m in Sources */,
+				C9155D1C1775FD7900451D1B /* main.m in Sources */,
+				C99A109B17A56FF400A328DF /* MapKitHelpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9155D291775FD7900451D1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9155D3B1775FD7900451D1B /* FlyMeThereTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9155D331775FD7900451D1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9155D0B1775FD7900451D1B /* FlyMeThere */;
+			targetProxy = C9155D321775FD7900451D1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9155D181775FD7900451D1B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9155D191775FD7900451D1B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9155D211775FD7900451D1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9155D221775FD7900451D1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9155D371775FD7900451D1B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9155D381775FD7900451D1B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9155D3C1775FD7900451D1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C9155D3D1775FD7900451D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9155D3F1775FD7900451D1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlyMeThere/FlyMeThere-Prefix.pch";
+				INFOPLIST_FILE = "FlyMeThere/FlyMeThere-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9155D401775FD7900451D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlyMeThere/FlyMeThere-Prefix.pch";
+				INFOPLIST_FILE = "FlyMeThere/FlyMeThere-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C9155D421775FD7900451D1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FlyMeThere.app/FlyMeThere";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlyMeThere/FlyMeThere-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FlyMeThereTests/FlyMeThereTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C9155D431775FD7900451D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FlyMeThere.app/FlyMeThere";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlyMeThere/FlyMeThere-Prefix.pch";
+				INFOPLIST_FILE = "FlyMeThereTests/FlyMeThereTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9155D071775FD7900451D1B /* Build configuration list for PBXProject "FlyMeThere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9155D3C1775FD7900451D1B /* Debug */,
+				C9155D3D1775FD7900451D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9155D3E1775FD7900451D1B /* Build configuration list for PBXNativeTarget "FlyMeThere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9155D3F1775FD7900451D1B /* Debug */,
+				C9155D401775FD7900451D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9155D411775FD7900451D1B /* Build configuration list for PBXNativeTarget "FlyMeThereTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9155D421775FD7900451D1B /* Debug */,
+				C9155D431775FD7900451D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9155D041775FD7900451D1B /* Project object */;
+}
